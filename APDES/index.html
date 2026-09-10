@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>APDES DESA</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APDES - Desa Bejaten</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="public-view">
+<header id="main-header">
+<div class="header-container">
+<div class="desa-identity hover-popup">
+<div class="logo-container">
+<img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787878684/Gemini_Generated_Image_4rnmgw4rnmgw4rnm_gtsehb.jpg" alt="Logo Desa Bejaten" class="desa-logo">
+</div>
+<div class="desa-title">
+<h1>
+<span class="desa-top">Desa</span>
+<span class="bejaten-bottom">Bejaten</span>
+</h1>
+</div>
+</div>
+<div class="mobile-menu-toggle" id="mobile-menu-toggle">
+<i class="fas fa-bars"></i>
+</div>
+<nav id="main-nav">
+<ul class="nav-links">
+<li><a href="#hero" class="hover-popup"><i class="fas fa-home"></i></a></li>
+<li class="dropdown">
+<a href="#" class="hover-popup">Profil  ▾ </a>
+<ul class="dropdown-menu">
+<li><a href="#">Visi Misi</a></li>
+<li><a href="#">Sejarah desa</a></li>
+<li><a href="#">wilayah administrative</a></li>
+<li><a href="#">Pemerintah desa</a></li>
+<li><a href="#">Peta Desa</a></li>
+<li><a href="#">IDM</a></li>
+<li><a href="#">SDGS Desa</a></li>
+<li><a href="#">Galeri</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="hover-popup">Lembaga  ▾ </a>
+<ul class="dropdown-menu">
+<li><a href="#">BPD</a></li>
+<li><a href="#">Ketua RW</a></li>
+<li><a href="#">Ketua RT</a></li>
+<li><a href="#">PKK</a></li>
+<li><a href="#">Karang Taruna</a></li>
+<li><a href="#">Posyandu</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="hover-popup">Statistik  ▾ </a>
+<ul class="dropdown-menu">
+<li><a href="#persebaran-kk">Persebaran dan Jumlah KK</a></li>
+<li><a href="#penduduk">Rekapitulasi Penduduk</a></li>
+<li><a href="#kelompok-usia">Klasifikasi Kelompok Usia</a></li>
+<li><a href="#kesehatan">Infrastruktur dan Kesehatan</a></li>
+<li><a href="#pendidikan">Pendidikan</a></li>
+<li><a href="#kesejahteraan">Indeks Kesejahteraan Sosial</a></li>
+<li><a href="#ketenagakerjaan">Ketenagakerjaan</a></li>
+<li><a href="#pemuda-olahraga">Pemuda dan Olahraga</a></li>
+<li><a href="#seni-budaya">Kesenian dan Kebudayaan Lokal</a></li>
+<li><a href="#peribadatan">Peribadatan</a></li>
+<li><a href="#mata-pencaharian">Mata Pencaharian Utama</a></li>
+<li><a href="#komoditi">Potensi Komoditi</a></li>
+<li><a href="#kelayakan-rumah">Kelayakan Infrastruktur</a></li>
+<li><a href="#sarpras">Sarana dan Prasarana</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#hero" class="hover-popup" style="color: var(--primary); font-weight: bold;">APBDes  ▾ </a>
+<ul class="dropdown-menu">
+<li><a href="#apdes-2025">2025</a></li>
+<li><a href="#hero" style="color: var(--primary); font-weight: bold;">2026</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="hover-popup">Artikel  ▾ </a>
+<ul class="dropdown-menu">
+<li><a href="#">Berita Desa</a></li>
+<li><a href="#">Berita Daerah</a></li>
+<li><a href="#">Berita Nasional</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="hover-popup">Potensi  ▾ </a>
+<ul class="dropdown-menu">
+<li><a href="#">Lapak Desa</a></li>
+<li><a href="#">UMKM</a></li>
+<li><a href="#">Perpustakaan</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="hover-popup">Informasi  ▾ </a>
+<ul class="dropdown-menu">
+<li><a href="#">Cek DPT</a></li>
+<li><a href="#">Cek Bansos</a></li>
+<li><a href="#">Cek PBB</a></li>
+<li><a href="#">Buku Saku UU Desa</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="hover-popup">Regulasi  ▾ </a>
+<ul class="dropdown-menu">
+<li><a href="#">Produk Hukum Desa</a></li>
+<li><a href="#">JDIH Semarang</a></li>
+</ul>
+</li>
+<li><a href="#" class="hover-popup">Agenda</a></li>
+<li class="dropdown">
+<a href="#" class="hover-popup">BUMDes  ▾ </a>
+<ul class="dropdown-menu">
+<li><a href="#">Profil</a></li>
+<li><a href="#">Unit Usaha</a></li>
+</ul>
+</li>
+<li><a href="#" class="hover-popup">Pengaduan</a></li>
+</ul>
+<div class="nav-actions">
+<button id="theme-toggle" class="btn-theme-toggle hover-popup"><i class="fas fa-moon"></i></button>
+<div class="dropdown">
+<button class="btn btn-admin hover-popup"><i class="fas fa-graduation-cap"></i> PPKO BEM FEB UNDIP  ▾ </button>
+<ul class="dropdown-menu">
+<li><a href="#">Profil</a></li>
+<li><a href="#">Mentari Cendekia</a></li>
+<li><a href="#">Kembang Usaha</a></li>
+<li><a href="#">Bijak Usaha</a></li>
+<li><a href="#">Siaga Tani</a></li>
+<li><a href="#">Sinergi Tani</a></li>
+<li><a href="#">Testimoni</a></li>
+<li><a href="#">Video Profil</a></li>
+</ul>
+</div>
+<button id="btn-open-login" class="btn btn-admin hover-popup"><i class="fas fa-lock"></i> Admin</button>
+</div>
+</nav>
+</div>
+</header>
+
+<section id="hero">
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<div class="hero-content-flex">
+<div class="hero-logo-side">
+<div class="hero-logo-glow-wrapper">
+<div class="hero-glow-effect"></div>
+<img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787893116/Desain_tanpa_judul_1_e6dlwz.png" alt="Logo Desa Bejaten" class="hero-clean-logo">
+</div>
+</div>
+<div class="hero-text-side">
+<h2><span>APDES</span></h2>
+<hr class="hero-line">
+<p><strong>APBDes Desa Bejaten</strong><br>Menyajikan informasi Anggaran Pendapatan dan Belanja Desa (APBDes/APDES) Desa Bejaten secara terbuka, lengkap, runtut, dan mudah dipahami masyarakat.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="quick-access">
+<div class="container grid-7">
+<a href="#ringkasan-apdes" class="quick-card hover-popup"><i class="fas fa-chart-pie"></i><p>Ringkasan</p></a>
+<a href="#dana-desa" class="quick-card hover-popup"><i class="fas fa-money-bill-wave"></i><p>Dana Desa</p></a>
+<a href="#bagi-hasil-pajak" class="quick-card hover-popup"><i class="fas fa-file-invoice-dollar"></i><p>Bagi Hasil Pajak</p></a>
+<a href="#bantuan-kabupaten" class="quick-card hover-popup"><i class="fas fa-hand-holding-usd"></i><p>Bantuan Kab</p></a>
+<a href="#bantuan-provinsi" class="quick-card hover-popup"><i class="fas fa-building"></i><p>Bantuan Prov</p></a>
+<a href="#alokasi-dana-desa" class="quick-card hover-popup"><i class="fas fa-coins"></i><p>Alokasi Dana</p></a>
+<a href="#silpa" class="quick-card hover-popup"><i class="fas fa-piggy-bank"></i><p>SILPA & BLT</p></a>
+</div>
+</section>
+<section id="ringkasan-apdes" class="section-bg-light">
+<div class="container">
+<div class="section-header hover-popup">
+<h2>Ringkasan APDES Tahun 2026</h2>
+<p class="badge badge-year">DASAR: PERDES NOMOR 09 TAHUN 2025</p>
+</div>
+<div class="grid-2 align-center-grid">
+<div class="stat-card hover-popup" style="border-left: 5px solid #279B48;">
+<i class="fas fa-arrow-down" style="color: #279B48;"></i>
+<h3 style="color: #279B48;">Rp 1.351.034.000,-</h3>
+<p>Pendapatan Desa</p>
+</div>
+<div class="stat-card hover-popup" style="border-left: 5px solid #E01A22;">
+<i class="fas fa-arrow-up" style="color: #E01A22;"></i>
+<h3 style="color: #E01A22;">Rp 1.440.238.934,-</h3>
+<p>Belanja Desa</p>
+</div>
+</div>
+</div>
+</section>
+<section id="dana-desa">
+<div class="container">
+<div class="section-header hover-popup">
+<h2>Dana Desa</h2>
+</div>
+<div class="content-box hover-popup">
+<div class="table-responsive">
+<table class="stat-table apdes-table">
+<thead>
+<tr>
+<th style="width: 5%;">No</th>
+<th style="width: 70%;">Uraian Kegiatan</th>
+<th style="width: 25%; text-align: right;">Anggaran (Rp)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>BOP 3 %</td><td>7.100.000</td></tr>
+<tr><td>2</td><td>INSENTIF GURU PAUD</td><td>7.200.000</td></tr>
+<tr><td>3</td><td>INSENTIF GURU NGAJI</td><td>10.800.000</td></tr>
+<tr><td>4</td><td>INSENTIF GURU TPQ</td><td>14.400.000</td></tr>
+<tr><td>5</td><td>PERLENGKAPAN TPQ</td><td>3.500.000</td></tr>
+<tr><td>6</td><td>PERLENGKAPAN PAUD</td><td>3.267.000</td></tr>
+<tr><td>7</td><td>BIDANG KESEHATAN</td><td>68.870.000</td></tr>
+<tr><td>8</td><td>INS. DIGITAL DAN TEKNOLOGI DESA</td><td>21.137.000</td></tr>
+<tr><td>9</td><td>17 - AN GELAR BUDAYA</td><td>1.850.000</td></tr>
+<tr><td>10</td><td>KONTRIBUSI GELAR BUDAYA</td><td>1.000.000</td></tr>
+<tr><td>11</td><td>KONTRIBUSI HUT - RI</td><td>2.000.000</td></tr>
+<tr><td>12</td><td>KONTRIBUSI MERTI BUMI SERASI</td><td>1.000.000</td></tr>
+<tr><td>13</td><td>KEGIATAN TARKHIM DESA BERSINAR</td><td>11.325.000</td></tr>
+<tr><td>14</td><td>PERLENGKAPAN PKK DAN PEMBERDAYAAN PEREMPUAN</td><td>37.465.000</td></tr>
+<tr><td>15</td><td>PERLENGKAPAN RT/ RW</td><td>2.891.000</td></tr>
+<tr><td>16</td><td>PKT IRIGASI PERTANIAN</td><td>3.500.000</td></tr>
+<tr><td>17</td><td>OLAHAN PANGAN KWT</td><td>1.800.000</td></tr>
+<tr><td>18</td><td>DUKUNGAN KOPERASI DESA MERAH PUTIH</td><td>66.418.500</td></tr>
+<tr><td>19</td><td>PERLENGKAPAN DAN PENINGKATAN KAPASITAS BUMDES</td><td>3.000.000</td></tr>
+<tr><td>20</td><td>17 AN EXPO</td><td>1.420.000</td></tr>
+<tr><td>21</td><td>BLT DANA DESA</td><td>10.800.000</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="bagi-hasil-pajak" class="section-bg-light">
+<div class="container">
+<div class="section-header hover-popup">
+<h2>Bagian Hasil Pajak dan Retribusi Daerah</h2>
+</div>
+<div class="content-box hover-popup">
+<div class="table-responsive">
+<table class="stat-table apdes-table">
+<thead>
+<tr>
+<th style="width: 5%;">No</th>
+<th style="width: 70%;">Uraian Kegiatan</th>
+<th style="width: 25%; text-align: right;">Anggaran (Rp)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>PPKD KADES PERADES</td><td>41.400.000</td></tr>
+<tr><td>2</td><td>INSENTIF OPERATOR DESA ( REG. DESA, SISKEUDES, SIPADES, JAGA DESA )</td><td>11.400.000</td></tr>
+<tr><td>3</td><td>INSENTIF OPR STAF TEKNIS</td><td>22.200.000</td></tr>
+<tr><td>4</td><td>INSENTIF KEBERSIHAN GEDUNG</td><td>3.600.000</td></tr>
+<tr><td>5</td><td>INSENTIF KEBERSIHAN KANTOR</td><td>3.600.000</td></tr>
+<tr><td>6</td><td>ATK KANTOR DESA ( BHP )</td><td>9.216.000</td></tr>
+<tr><td>7</td><td>OPERASIONAL KANTOR DESA</td><td>29.828.000</td></tr>
+<tr><td>8</td><td>INSENTIF LINMAS</td><td>5.000.000</td></tr>
+<tr><td>9</td><td>AIR KANTOR DESA</td><td>271.800</td></tr>
+<tr><td>10</td><td>PEMILIHAN ANGGOTA BPD</td><td>10.560.000</td></tr>
+<tr><td>11</td><td>PEMILIHAN KEPALA DESA</td><td>44.917.722</td></tr>
+<tr><td>12</td><td>KEG. SIPADES</td><td>1.000.000</td></tr>
+<tr><td>13</td><td>PEMBINAAN PKK</td><td>5.050.000</td></tr>
+<tr><td>14</td><td>BIMTEK PERANGKAT DESA</td><td>8.000.000</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="alokasi-dana-desa">
+<div class="container">
+<div class="section-header hover-popup">
+<h2>Alokasi Dana Desa</h2>
+</div>
+<div class="content-box hover-popup">
+<div class="table-responsive">
+<table class="stat-table apdes-table">
+<thead>
+<tr>
+<th style="width: 5%;">No</th>
+<th style="width: 70%;">Uraian Kegiatan</th>
+<th style="width: 25%; text-align: right;">Anggaran (Rp)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>SILTAP KEPALA DESA</td><td>46.800.000</td></tr>
+<tr><td>2</td><td>SILTAP PERANGKAT DESA</td><td>286.800.000</td></tr>
+<tr><td>3</td><td>BPJS KET. KEPALA DESA ( APBDES )</td><td>2.920.320</td></tr>
+<tr><td>4</td><td>BPJS KET. PERANGKAT DESA ( APBDES )</td><td>17.896.320</td></tr>
+<tr><td>5</td><td>BPJS KET. KEPALA DESA ( SILTAP )</td><td>1.404.000</td></tr>
+<tr><td>6</td><td>BPJS KET. PERANGKAT DESA ( SILTAP )</td><td>9.036.480</td></tr>
+<tr><td>7</td><td>BPJS KET. RT/ RW</td><td>2.480.400</td></tr>
+<tr><td>8</td><td>BPJS KET. BPD + STAF</td><td>1.144.800</td></tr>
+<tr><td>9</td><td>FOTOCOPY PENGGANDAAN</td><td>279.180</td></tr>
+<tr><td>10</td><td>TUNJANGAN BPD</td><td>24.780.000</td></tr>
+<tr><td>11</td><td>OPS BPD</td><td>3.000.000</td></tr>
+<tr><td>12</td><td>INSENTIF RT/ RW</td><td>13.000.000</td></tr>
+<tr><td>13</td><td>KOORDINASI LINMAS ( SILPA ADD )</td><td>2.250.000</td></tr>
+<tr><td>14</td><td>BELANJA HT ( SILPA ADD )</td><td>1.557.222</td></tr>
+<tr><td>15</td><td>BPJS KESEHATAN KEPALA DESA</td><td>468.000</td></tr>
+<tr><td>16</td><td>BPJS KESEHATAN PERANGKAT DESA</td><td>2.841.684</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="bantuan-kabupaten" class="section-bg-light">
+<div class="container">
+<div class="section-header hover-popup">
+<h2>Bantuan Kabupaten</h2>
+</div>
+<div class="content-box hover-popup">
+<div class="table-responsive">
+<table class="stat-table apdes-table">
+<thead>
+<tr>
+<th style="width: 5%;">No</th>
+<th style="width: 70%;">Uraian Kegiatan</th>
+<th style="width: 25%; text-align: right;">Anggaran (Rp)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>KARANGTARUNA</td><td>5.000.000</td></tr>
+<tr><td>2</td><td>INSENTIF KADER PKK</td><td>15.000.000</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="bantuan-provinsi">
+<div class="container">
+<div class="section-header hover-popup">
+<h2>Bantuan Provinsi</h2>
+</div>
+<div class="content-box hover-popup">
+<div class="table-responsive">
+<table class="stat-table apdes-table">
+<thead>
+<tr>
+<th style="width: 5%;">No</th>
+<th style="width: 70%;">Uraian Kegiatan</th>
+<th style="width: 25%; text-align: right;">Anggaran (Rp)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>RABAT BETON JALAN MRANGGEN</td><td>250.000.000</td></tr>
+<tr><td>2</td><td>RABAT BETON SAWAH BLABAG</td><td>100.000.000</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="ringkasan-sumber-dana" class="section-bg-light">
+<div class="container">
+<div class="section-header hover-popup">
+<h2>Ringkasan Sumber Dana</h2>
+</div>
+<div class="content-box hover-popup">
+<div class="grid-2 align-center-grid">
+<div id="chart-sumber-dana" style="height: 380px;"></div>
+<div>
+<div class="grid-2">
+<div class="stat-card hover-popup" style="padding: 1.5rem; text-align: left; border-left: 4px solid #3B82C4;">
+<p style="font-size: 0.85rem; margin-bottom: 5px;">DANA DESA</p>
+<h3 style="font-size: 1.3rem; color: #3B82C4; margin: 0;">247.268.000</h3>
+</div>
+<div class="stat-card hover-popup" style="padding: 1.5rem; text-align: left; border-left: 4px solid #279B48;">
+<p style="font-size: 0.85rem; margin-bottom: 5px;">BANTUAN PROVINSI</p>
+<h3 style="font-size: 1.3rem; color: #279B48; margin: 0;">350.000.000</h3>
+</div>
+<div class="stat-card hover-popup" style="padding: 1.5rem; text-align: left; border-left: 4px solid #F99D26;">
+<p style="font-size: 0.85rem; margin-bottom: 5px;">BANTUAN KABUPATEN</p>
+<h3 style="font-size: 1.3rem; color: #F99D26; margin: 0;">95.000.000</h3>
+</div>
+<div class="stat-card hover-popup" style="padding: 1.5rem; text-align: left; border-left: 4px solid #7A3CD6;">
+<p style="font-size: 0.85rem; margin-bottom: 5px;">BAGIAN HASIL PAJAK</p>
+<h3 style="font-size: 1.3rem; color: #7A3CD6; margin: 0;">196.065.000</h3>
+</div>
+<div class="stat-card hover-popup" style="padding: 1.5rem; text-align: left; border-left: 4px solid #E11484;">
+<p style="font-size: 0.85rem; margin-bottom: 5px;">ALOKASI DANA DESA</p>
+<h3 style="font-size: 1.3rem; color: #E11484; margin: 0;">399.101.000</h3>
+</div>
+<div class="stat-card hover-popup" style="padding: 1.5rem; text-align: left; border-left: 4px solid #E01A22;">
+<p style="font-size: 0.85rem; margin-bottom: 5px;">BLT DANA DESA</p>
+<h3 style="font-size: 1.3rem; color: #E01A22; margin: 0;">10.800.000</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="silpa">
+<div class="container">
+<div class="grid-2">
+<div class="content-box text-center hover-popup" style="background: #E01A22; color: white;">
+<h3 style="color: white; margin-bottom: 10px; font-weight: 600; font-size: 1.2rem;">BLT DANA DESA</h3>
+<h2 style="color: white; font-size: 2.5rem; margin-bottom: 0;">Rp. 10.800.000,-</h2>
+</div>
+<div class="content-box text-center hover-popup" style="background: var(--primary); color: white;">
+<h3 style="color: white; margin-bottom: 10px; font-weight: 600; font-size: 1.2rem;">SILPA TAHUN 2025</h3>
+<h2 style="color: white; font-size: 2.5rem; margin-bottom: 0;">Rp. 89.204.934,-</h2>
+</div>
+</div>
+</div>
+</section>
+<section id="apdes-2025" style="padding-top: 5rem;">
+<div class="container">
+<div class="content-box text-center hover-popup" style="background: var(--primary-dark); color: white; padding: 3.5rem 2rem; border-radius: 16px; border: 2px solid rgba(255,255,255,0.1);">
+<h2 style="color: white; font-size: 2.8rem; margin-bottom: 10px; letter-spacing: 1px;">APBDES 2025</h2>
+<p style="color: #d1d5db; font-size: 1.2rem; margin: 0; font-weight: 500;">Penetapan Awal Anggaran Pendapatan dan Belanja Desa Bejaten Tahun 2025</p>
+
+<div class="grid-6" style="margin-top: 3rem;">
+<a href="#ringkasan-apdes-2025" class="quick-card hover-popup"><i class="fas fa-chart-pie"></i><p>Ringkasan 25</p></a>
+<a href="#pemerintahan-2025" class="quick-card hover-popup"><i class="fas fa-landmark"></i><p>Pemerintahan</p></a>
+<a href="#pembangunan-2025" class="quick-card hover-popup"><i class="fas fa-hard-hat"></i><p>Pembangunan</p></a>
+<a href="#pembinaan-2025" class="quick-card hover-popup"><i class="fas fa-users"></i><p>Pembinaan</p></a>
+<a href="#pemberdayaan-2025" class="quick-card hover-popup"><i class="fas fa-handshake"></i><p>Pemberdayaan</p></a>
+<a href="#silpa-2025" class="quick-card hover-popup"><i class="fas fa-piggy-bank"></i><p>SILPA & BLT</p></a>
+</div>
+</div>
+</div>
+</section>
+<section id="ringkasan-apdes-2025" class="section-bg-light" style="padding-top: 2rem;">
+<div class="container">
+<div class="section-header hover-popup">
+<h2>Ringkasan APDES Tahun 2025</h2>
+<p class="badge badge-year">PENETAPAN AWAL</p>
+</div>
+<div class="grid-2 align-center-grid" style="justify-content: center; max-width: 600px; margin: 0 auto;">
+<div class="stat-card hover-popup" style="border-left: 5px solid #E01A22; width: 100%;">
+<i class="fas fa-arrow-up" style="color: #E01A22;"></i>
+<h3 style="color: #E01A22;">Rp 1.413.445.079,-</h3>
+<p>Total Belanja Desa</p>
+</div>
+</div>
+</div>
+</section>
+<section id="pemerintahan-2025">
+<div class="container">
+<div class="section-header hover-popup">
+<h2>Bidang Pemerintahan</h2>
+</div>
+<div class="content-box hover-popup">
+<div class="table-responsive">
+<table class="stat-table apdes-table">
+<thead>
+<tr>
+<th style="width: 5%;">No</th>
+<th style="width: 70%;">Uraian Kegiatan</th>
+<th style="width: 25%; text-align: right;">Anggaran (Rp)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>SILTAP DAN TUNJANGAN</td><td>333.600.000</td></tr>
+<tr><td>2</td><td>BPJS PEGAWAI</td><td>25.102.188</td></tr>
+<tr><td>3</td><td>STAF TEKNIS</td><td>22.200.000</td></tr>
+<tr><td>4</td><td>SERAGAM DINAS</td><td>2.750.000</td></tr>
+<tr><td>5</td><td>HONOR PPKD</td><td>24.000.000</td></tr>
+<tr><td>6</td><td>MATERAI</td><td>2.500.000</td></tr>
+<tr><td>7</td><td>REGISTRASI DESA</td><td>1.200.000</td></tr>
+<tr><td>8</td><td>SISKEUDES</td><td>3.600.000</td></tr>
+<tr><td>9</td><td>SIKS-NG</td><td>1.200.000</td></tr>
+<tr><td>10</td><td>TEKNIS KEBERSIHAN</td><td>3.600.000</td></tr>
+<tr><td>11</td><td>TUNJANGAN BPD</td><td>24.780.000</td></tr>
+<tr><td>12</td><td>OPS BPD</td><td>4.000.000</td></tr>
+<tr><td>13</td><td>INSENTIF RT / RW</td><td>13.000.000</td></tr>
+<tr><td>14</td><td>BOP 3% KEPALA DESA</td><td>22.500.000</td></tr>
+<tr><td>15</td><td>DESA CANTIK</td><td>18.227.000</td></tr>
+<tr><td>16</td><td>PILKADES</td><td>8.000.000</td></tr>
+<tr><td>17</td><td>MERTI BUMI SERASI</td><td>3.000.000</td></tr>
+<tr><td>18</td><td>SUSUK WANGAN</td><td>2.000.000</td></tr>
+<tr><td>19</td><td>SDGS</td><td>30.714.452</td></tr>
+<tr><td>20</td><td>OPERASIONAL PEMERINTAH DESA LAINNYA</td><td>1.104.909</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="pembangunan-2025" class="section-bg-light">
+<div class="container">
+<div class="section-header hover-popup">
+<h2>Bidang Pembangunan</h2>
+</div>
+<div class="content-box hover-popup">
+<div class="table-responsive">
+<table class="stat-table apdes-table">
+<thead>
+<tr>
+<th style="width: 5%;">No</th>
+<th style="width: 70%;">Uraian Kegiatan</th>
+<th style="width: 25%; text-align: right;">Anggaran (Rp)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>PENDIDIKAN (PAUD, TPQ)</td><td>25.200.000</td></tr>
+<tr><td>2</td><td>APE PAUD</td><td>7.000.000</td></tr>
+<tr><td>3</td><td>ALAT KESEHATAN</td><td>16.780.000</td></tr>
+<tr><td>4</td><td>POSYANDU</td><td>104.073.000</td></tr>
+<tr><td>5</td><td>PENYULUHAN PEREMPUAN</td><td>16.920.000</td></tr>
+<tr><td>6</td><td>DESA BERSINAR</td><td>2.500.000</td></tr>
+<tr><td>7</td><td>RABAT BETON JALAN SAWAHA JATI</td><td>77.786.000</td></tr>
+<tr><td>8</td><td>RABAT BETON JALAN LINGKUNGAN RT 01 - 04 KRAJAN</td><td>61.995.000</td></tr>
+<tr><td>9</td><td>RABAT BETON JALAN LINGKUNGAN RT 02 KRAJAN</td><td>32.834.000</td></tr>
+<tr><td>10</td><td>LANJ. RABAT BETON SAMPING P. ROHMAT RT 03</td><td>5.170.000</td></tr>
+<tr><td>11</td><td>RABAT BETON JALAN RT 01 KRAJAN</td><td>35.993.000</td></tr>
+<tr><td>12</td><td>JALAN USAHA TANI DUSUN MRANGGEN</td><td>42.046.000</td></tr>
+<tr><td>13</td><td>TALUD JALAN USAHA TANI SAWAH BLABAG</td><td>80.487.000</td></tr>
+<tr><td>14</td><td>LANJUTAN TALUD EMBUNG MRANGGEN</td><td>31.758.000</td></tr>
+<tr><td>15</td><td>RTLH 3 TITIK</td><td>30.000.000</td></tr>
+<tr><td>16</td><td>JAMBANISASI</td><td>6.000.000</td></tr>
+<tr><td>17</td><td>PERPIPAAN AIR BERSIH</td><td>30.949.000</td></tr>
+<tr><td>18</td><td>BAK TANDON AIR KALONGAN</td><td>7.451.000</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="pembinaan-2025">
+<div class="container">
+<div class="section-header hover-popup">
+<h2>Bidang Pembinaan</h2>
+</div>
+<div class="content-box hover-popup">
+<div class="table-responsive">
+<table class="stat-table apdes-table">
+<thead>
+<tr>
+<th style="width: 5%;">No</th>
+<th style="width: 70%;">Uraian Kegiatan</th>
+<th style="width: 25%; text-align: right;">Anggaran (Rp)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>LINMAS</td><td>5.000.000</td></tr>
+<tr><td>2</td><td>PENYULUHAN BIDANG HUKUM</td><td>7.970.000</td></tr>
+<tr><td>3</td><td>KARANG TARUNA</td><td>10.050.000</td></tr>
+<tr><td>4</td><td>PKK DAN TURUNANNYA</td><td>35.484.021</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="pemberdayaan-2025" class="section-bg-light">
+<div class="container">
+<div class="section-header hover-popup">
+<h2>Bidang Pemberdayaan</h2>
+</div>
+<div class="content-box hover-popup">
+<div class="table-responsive">
+<table class="stat-table apdes-table">
+<thead>
+<tr>
+<th style="width: 5%;">No</th>
+<th style="width: 70%;">Uraian Kegiatan</th>
+<th style="width: 25%; text-align: right;">Anggaran (Rp)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>PELATIHAN BUMDES</td><td>8.000.000</td></tr>
+<tr><td>2</td><td>BIMTEK APARATUR DESA</td><td>10.500.000</td></tr>
+<tr><td>3</td><td>UMKM 17 AN EXPO</td><td>1.420.000</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="silpa-2025">
+<div class="container">
+<div class="grid-2">
+<div class="content-box text-center hover-popup" style="background: #E01A22; color: white;">
+<h3 style="color: white; margin-bottom: 10px; font-weight: 600; font-size: 1.2rem;">PENANGGULANGAN BENCANA (BLT)</h3>
+<h2 style="color: white; font-size: 2.5rem; margin-bottom: 0;">Rp. 36.000.000,-</h2>
+</div>
+<div class="content-box text-center hover-popup" style="background: var(--primary); color: white;">
+<h3 style="color: white; margin-bottom: 10px; font-weight: 600; font-size: 1.2rem;">SILPA TAHUN 2024 (Rekening)</h3>
+<h2 style="color: white; font-size: 2.5rem; margin-bottom: 0;">Rp. 49.966.079,-</h2>
+</div>
+</div>
+</div>
+</section>
+<footer id="main-footer">
+<div class="container grid-3">
+<div class="footer-col hover-popup">
+<div class="desa-identity" style="margin-bottom: 1.5rem;">
+<div class="logo-container">
+<img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787878684/Gemini_Generated_Image_4rnmgw4rnmgw4rnm_gtsehb.jpg" alt="Logo Desa Bejaten" class="desa-logo">
+</div>
+<div class="desa-title">
+<h1>
+<span class="desa-top">Desa</span>
+<span class="bejaten-bottom">Bejaten</span>
+</h1>
+</div>
+</div>
+<p>Jl. Raya Bejaten<br>Kecamatan Pabelan<br>Kabupaten Semarang<br>Jawa Tengah</p>
+<p class="mt-3"><i class="fas fa-phone"></i> +62 857-4066-6663<br><i class="fas fa-envelope"></i> Desabejaten.2014@gmail.com</p>
+</div>
+<div class="footer-col hover-popup">
+<h3>Lokasi Kami</h3>
+<div class="maps-container">
+<a href="https://maps.app.goo.gl/we8wxnEXXYysWx7YA?g_st=ac" target="_blank" class="btn btn-primary btn-sm mb-3" style="width:100%;"><i class="fas fa-map-marked-alt"></i> Buka di Google Maps</a>
+<a href="https://maps.app.goo.gl/we8wxnEXXYysWx7YA?g_st=ac" target="_blank">
+<img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787804788/I_20260327_080551_0000.jpg_kwu5zx.jpg" alt="Peta Google Maps Desa Bejaten" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid rgba(255,255,255,0.2);">
+</a>
+</div>
+</div>
+<div class="footer-col text-center hover-popup">
+<h3>Media Sosial</h3>
+<div class="social-links justify-center mt-3">
+<a href="https://www.facebook.com/desaa.bejaten?mibextid=ZbWKwL" target="_blank" class="hover-popup"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/desabejaten_official?igsi=NnRnazQzdXlvNmhu" target="_blank" class="hover-popup"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@desabejaten?_r=1&_t=ZS-99EZdlMnLEb" target="_blank" class="hover-popup"><i class="fab fa-tiktok"></i></a>
+<a href="https://youtube.com/@desabejaten9575?si=IZNO4eA0TjP5sYWk" target="_blank" class="hover-popup"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Pemerintah Desa Bejaten. All rights reserved.</p>
+</div>
+</footer>
+</div>
+
+<div id="login-modal" class="modal-overlay">
+<div class="modal-content">
+<div class="modal-header">
+<h2>LOGIN ADMIN</h2>
+<button id="btn-close-modal" class="close-btn"><i class="fas fa-times"></i></button>
+</div>
+<div class="modal-body">
+<p class="text-sm text-muted" style="margin-bottom: 20px;">Silakan login untuk mengakses halaman CMS.</p>
+<div id="login-error" class="alert alert-danger" style="display: none;">Username atau password salah.</div>
+<form id="form-login">
+<div class="form-group">
+<label>Username</label>
+<input type="text" id="login-username" class="form-control" placeholder="Masukkan username" required>
+</div>
+<div class="form-group">
+<label>Password</label>
+<input type="password" id="login-password" class="form-control" placeholder="Masukkan password" required>
+</div>
+<div class="modal-actions">
+<button type="button" id="btn-cancel-login" class="btn btn-secondary">Batal</button>
+<button type="submit" class="btn btn-primary">MASUK</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div id="owl-system" aria-label="Interactive Owl Mascot" tabindex="-1">
+<div id="owl-wrapper">
+<img id="owl-img" src="" alt="Owl Mascot">
+<div id="owl-fx"></div>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
