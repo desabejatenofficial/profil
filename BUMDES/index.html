@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>BUMDES DESA</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUMDes - Desa Bejaten</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="public-view">
+        <header id="main-header">
+            <div class="header-container">
+                <div class="desa-identity hover-popup">
+                    <div class="logo-container">
+                        <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787878684/Gemini_Generated_Image_4rnmgw4rnmgw4rnm_gtsehb.jpg" alt="Logo Desa Bejaten" class="desa-logo">
+                    </div>
+                    <div class="desa-title">
+                        <h1>
+                            <span class="desa-top">Desa</span>
+                            <span class="bejaten-bottom">Bejaten</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav id="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="#hero" class="hover-popup"><i class="fas fa-home"></i></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Profil ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Visi Misi</a></li>
+                                <li><a href="#">Sejarah desa</a></li>
+                                <li><a href="#">wilayah administrative</a></li>
+                                <li><a href="#">Pemerintah desa</a></li>
+                                <li><a href="#">Peta Desa</a></li>
+                                <li><a href="#">IDM</a></li>
+                                <li><a href="#">SDGS Desa</a></li>
+                                <li><a href="#">Galeri</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Lembaga ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">BPD</a></li>
+                                <li><a href="#">Ketua RW</a></li>
+                                <li><a href="#">Ketua RT</a></li>
+                                <li><a href="#">PKK</a></li>
+                                <li><a href="#">Karang Taruna</a></li>
+                                <li><a href="#">Posyandu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Statistik ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Persebaran Dan Jumlah KK</a></li>
+                                <li><a href="#">Rekapitulasi Penduduk</a></li>
+                                <li><a href="#">Klasifikasi Kelompok Usia</a></li>
+                                <li><a href="#">Infrastruktur Dan Kesehatan</a></li>
+                                <li><a href="#">Pendidikan</a></li>
+                                <li><a href="#">Indeks Kesejahteraan Sosial</a></li>
+                                <li><a href="#">Ketenagakerjaan</a></li>
+                                <li><a href="#">Pemuda Dan Olahraga</a></li>
+                                <li><a href="#">Kesenian Dan Kebudayaan Lokal</a></li>
+                                <li><a href="#">Peribadatan</a></li>
+                                <li><a href="#">Mata Pencaharian Utama (Tahun 2024)</a></li>
+                                <li><a href="#">Potensi Komoditi</a></li>
+                                <li><a href="#">Kelayakan Infrastruktur</a></li>
+                                <li><a href="#">Sarana Dan Prasarana</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">APBDes ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">2025</a></li>
+                                <li><a href="#">2026</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Artikel ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Berita Desa</a></li>
+                                <li><a href="#">Berita Kabupaten</a></li>
+                                <li><a href="#">Berita Provinsi</a></li>
+                                <li><a href="#">Berita Nasional</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Potensi ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Lapak Desa</a></li>
+                                <li><a href="#">UMKM</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Informasi ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Cek DPT</a></li>
+                                <li><a href="#">Cek Bansos</a></li>
+                                <li><a href="#">Cek PBB</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Regulasi ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Peraturan Desa</a></li>
+                                <li><a href="#">JDIH Semarang</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="hover-popup">Agenda</a></li>
+                        <li class="dropdown">
+                            <!-- Menu BUMDes Aktif dengan Accent Ungu -->
+                            <a href="#" class="hover-popup active-menu">BUMDes ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#unit-air">Unit Air</a></li>
+                                <li><a href="#unit-ayam">Unit Peternakan Ayam KUB</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="hover-popup">Pengaduan</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <button id="theme-toggle" class="btn-theme-toggle hover-popup"><i class="fas fa-moon"></i></button>
+                        <button class="btn btn-admin hover-popup"><i class="fas fa-graduation-cap"></i> PPKO BEM FEB UNDIP</button>
+                        <button id="btn-open-login" class="btn btn-admin hover-popup"><i class="fas fa-lock"></i> Admin</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        
+        <section id="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-content-flex">
+                    <div class="hero-logo-side">
+                        <div class="hero-logo-glow-wrapper hover-popup">
+                            <div class="hero-glow-effect"></div>
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787893116/Desain_tanpa_judul_1_e6dlwz.png" alt="Logo Desa Bejaten" class="hero-clean-logo">
+                        </div>
+                    </div>
+                    <div class="hero-text-side hover-popup">
+                        <h2><span>BUMDES</span></h2>
+                        <hr class="hero-line">
+                        <p>Selamat datang di halaman resmi BUM Desa Husodo Mulyo Bejaten. Kami menaungi berbagai unit usaha yang dikembangkan secara profesional untuk mendukung perekonomian dan pemberdayaan masyarakat Desa Bejaten, Kecamatan Pabelan, Kabupaten Semarang.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bumdes-nav" style="margin-top: -4rem; position: relative; z-index: 10;">
+            <div class="container grid-2">
+                <a href="#unit-air" class="quick-card bumdes-card-accent hover-popup" style="padding: 2rem; border-radius: 15px;">
+                    <i class="fas fa-hand-holding-water" style="font-size: 3rem; margin-bottom: 15px;"></i>
+                    <h3 style="font-size: 1.5rem; color: var(--primary); margin-bottom: 5px;">BUMDes Unit Air</h3>
+                    <p style="font-size: 1rem;">Pengelolaan dan Penyaluran Air Bersih</p>
+                </a>
+                <a href="#unit-ayam" class="quick-card bumdes-card-accent hover-popup" style="padding: 2rem; border-radius: 15px;">
+                    <i class="fas fa-egg" style="font-size: 3rem; margin-bottom: 15px;"></i>
+                    <h3 style="font-size: 1.5rem; color: var(--primary); margin-bottom: 5px;">BUMDes Unit Ayam KUB</h3>
+                    <p style="font-size: 1rem;">Peternakan Ayam KUB Petelur</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECTION UNIT AIR
+        =============================================== -->
+        <section id="unit-air" class="section-bg-light">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Unit Usaha Air</h2>
+                    <p>BUM Desa Husodo Mulyo Bejaten</p>
+                </div>
+                <div class="content-box hover-popup">
+                    <h3>Gambaran Unit Usaha</h3>
+                    <p>Unit usaha pengelolaan air ini dikembangkan untuk mendukung pemenuhan kebutuhan dasar masyarakat Desa Bejaten. Berdasarkan anggaran dasar BUMDes, kegiatan ini masuk dalam klasifikasi <strong>36003 – Aktivitas Penunjang Pengelolaan Air</strong>.</p>
+                    <p>Kegiatan operasional utama mencakup:</p>
+                    <ul class="mission-list">
+                        <li>Pengadaan dan penyaluran air bersih kepada masyarakat.</li>
+                        <li>Pencatatan meteran secara berkala.</li>
+                        <li>Pemberian tagihan dan administrasi pelanggan.</li>
+                        <li>Kegiatan penunjang pengelolaan air lainnya untuk kelancaran distribusi.</li>
+                    </ul>
+                    <div class="alert-info mt-4">
+                        <i class="fas fa-info-circle"></i> Informasi detail operasional unit usaha akan diperbarui sesuai dengan data operasional aktual BUMDes.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECTION UNIT PETERNAKAN AYAM KUB PETELUR
+        =============================================== -->
+        <section id="unit-ayam">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Unit Peternakan Ayam KUB Petelur</h2>
+                    <p>Pengembangan Ketahanan Pangan & Ekonomi Lokal</p>
+                </div>
+
+                <!-- A. Gambaran Unit Usaha -->
+                <div class="content-box hover-popup mb-3">
+                    <h3><i class="fas fa-chart-line" style="color: var(--primary);"></i> Gambaran Unit Usaha</h3>
+                    <p>Usaha peternakan ayam KUB petelur merupakan salah satu rencana strategis pengembangan usaha BUMDes Husodo Mulyo. Inisiatif ini diarahkan secara khusus untuk mendukung ketahanan pangan desa, menyediakan sumber protein hewani berkualitas, menciptakan lapangan kerja lokal, serta meningkatkan pendapatan asli BUMDes yang berdampak langsung pada perekonomian masyarakat Desa Bejaten.</p>
+                </div>
+
+                <!-- B & C. Tentang Ayam KUB & Skala Usaha -->
+                <div class="grid-2 mb-3">
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-info-circle" style="color: var(--primary);"></i> Tentang Ayam KUB</h3>
+                        <p><strong>Kampung Unggul Balitbangtan (KUB)</strong> merupakan galur ayam lokal inovasi unggulan.</p>
+                        <p>Berdasarkan studi kelayakan, ayam KUB dipilih karena memiliki produktivitas telur yang jauh lebih tinggi dibandingkan ayam kampung biasa, memiliki daya tahan tubuh yang sangat baik terhadap lingkungan, serta efisiensi penggunaan pakan yang relatif tinggi.</p>
+                    </div>
+                    <div class="bumdes-stat-card hover-popup">
+                        <span class="bumdes-badge">Skala Tahap Awal</span>
+                        <h3>700</h3>
+                        <p>Ekor Ayam KUB Petelur</p>
+                        <small style="color: var(--text-muted);">Dikelola secara intensif untuk produksi optimal</small>
+                    </div>
+                </div>
+
+                <!-- N. Status Kelayakan (Highlight) -->
+                <div class="content-box text-center hover-popup mb-3" style="background: var(--purple-pale); border-color: var(--primary);">
+                    <h2 style="color: var(--primary); font-size: 2rem; margin-bottom: 5px;">LAYAK DIKEMBANGKAN</h2>
+                    <p style="margin: 0; color: var(--primary-dark); font-weight: 600;">* Berdasarkan Studi Kelayakan Usaha Peternakan Ayam KUB Petelur 2025</p>
+                </div>
+
+                <!-- D & E. Potensi Pasar & Target -->
+                <div class="grid-2 mb-3">
+                    <!-- Ditambahkan flex layout agar kotak ungu stretch -->
+                    <div class="content-box hover-popup" style="display: flex; flex-direction: column; height: 100%;">
+                        <h3><i class="fas fa-store" style="color: var(--primary);"></i> Potensi Pasar</h3>
+                        <p>Berdasarkan studi kelayakan, permintaan telur ayam kampung di tingkat lokal cukup tinggi sementara pasokan masih terbatas. Hal ini membuka peluang pasar yang luas di Desa Bejaten dan wilayah sekitarnya.</p>
+                        <div class="alert-info mt-3" style="text-align: center; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-radius: 8px;">
+                            <span style="font-size: 0.9rem; display: block; margin-bottom: 5px;">Proyeksi Produksi (Estimasi Studi)</span>
+                            <strong style="font-size: 1.4rem;">±13.650 butir / bulan</strong><br>
+                            <span>(±450 butir / hari)</span>
+                        </div>
+                    </div>
+                    <div class="grid-2">
+                        <div class="quick-card hover-popup">
+                            <i class="fas fa-home"></i>
+                            <h4 style="margin: 10px 0 5px;">Rumah Tangga</h4>
+                            <p style="font-size: 0.8rem;">Konsumen lokal dengan pembelian rutin harian.</p>
+                        </div>
+                        <div class="quick-card hover-popup">
+                            <i class="fas fa-utensils"></i>
+                            <h4 style="margin: 10px 0 5px;">UMKM Kuliner</h4>
+                            <p style="font-size: 0.8rem;">Warung makan, katering, dan pelaku usaha.</p>
+                        </div>
+                        <div class="quick-card hover-popup">
+                            <i class="fas fa-school"></i>
+                            <h4 style="margin: 10px 0 5px;">Lembaga</h4>
+                            <p style="font-size: 0.8rem;">Sekolah, PAUD, pesantren & lembaga sosial.</p>
+                        </div>
+                        <div class="quick-card hover-popup">
+                            <i class="fas fa-shopping-basket"></i>
+                            <h4 style="margin: 10px 0 5px;">Pasar & Toko</h4>
+                            <p style="font-size: 0.8rem;">Pasar tradisional dan toko kelontong lokal.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- F. Keunggulan Unit Usaha -->
+                <h3 class="text-center mt-4 mb-3" style="color: var(--primary);">Keunggulan Unit Usaha</h3>
+                <div class="grid-3 mb-3">
+                    <div class="admin-card text-center hover-popup" style="padding: 1.5rem;">
+                        <i class="fas fa-map-marker-alt" style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;"></i>
+                        <h4>Produk Lokal Desa</h4>
+                        <p style="font-size: 0.9rem;">Dihasilkan langsung dari Desa Bejaten dengan kedekatan jarak ke konsumen akhir.</p>
+                    </div>
+                    <div class="admin-card text-center hover-popup" style="padding: 1.5rem;">
+                        <i class="fas fa-truck-fast" style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;"></i>
+                        <h4>Distribusi Cepat</h4>
+                        <p style="font-size: 0.9rem;">Kontinuitas suplai yang terjaga dan pengiriman yang jauh lebih segar ke pasar.</p>
+                    </div>
+                    <div class="admin-card text-center hover-popup" style="padding: 1.5rem;">
+                        <i class="fas fa-people-carry" style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;"></i>
+                        <h4>Pemberdayaan</h4>
+                        <p style="font-size: 0.9rem;">Membuka peluang kerja dan memberdayakan SDM/tenaga kerja lokal desa.</p>
+                    </div>
+                </div>
+
+                <!-- G. Proses Produksi (Timeline) -->
+                <div class="content-box hover-popup mb-3">
+                    <h3 style="margin-bottom: 1.5rem;"><i class="fas fa-cogs" style="color: var(--primary);"></i> Alur Proses Produksi</h3>
+                    <div class="bumdes-timeline">
+                        <div class="bumdes-timeline-item hover-popup">
+                            <i class="fas fa-home"></i>
+                            <p>Pemeliharaan<br>Ayam</p>
+                        </div>
+                        <div class="bumdes-timeline-item hover-popup">
+                            <i class="fas fa-seedling"></i>
+                            <p>Pemberian<br>Pakan</p>
+                        </div>
+                        <div class="bumdes-timeline-item hover-popup">
+                            <i class="fas fa-stethoscope"></i>
+                            <p>Pemantauan<br>Kesehatan</p>
+                        </div>
+                        <div class="bumdes-timeline-item hover-popup">
+                            <i class="fas fa-egg"></i>
+                            <p>Pengumpulan<br>Telur</p>
+                        </div>
+                        <div class="bumdes-timeline-item hover-popup">
+                            <i class="fas fa-box-open"></i>
+                            <p>Penanganan<br>Pascapanen</p>
+                        </div>
+                        <div class="bumdes-timeline-item hover-popup">
+                            <i class="fas fa-truck"></i>
+                            <p>Distribusi &<br>Penjualan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- H & I. Teknologi dan SDM -->
+                <div class="grid-2 mb-3">
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-microchip" style="color: var(--primary);"></i> Teknologi & Peralatan</h3>
+                        <p style="margin-bottom: 10px;">Unit usaha ini didukung oleh fasilitas standar peternakan modern:</p>
+                        <ul class="mission-list" style="margin-bottom: 0;">
+                            <li>Sistem kandang terstandar</li>
+                            <li>Tempat pakan & tempat minum nipple otomatis</li>
+                            <li>Penerangan menggunakan teknologi LED</li>
+                            <li>Timbangan digital & rak telur</li>
+                            <li>Peralatan sanitasi lengkap</li>
+                            <li>Sistem pencatatan digital sederhana untuk operasional</li>
+                        </ul>
+                    </div>
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-users-cog" style="color: var(--primary);"></i> Tim Pengelola Unit</h3>
+                        <ul class="mission-list">
+                            <li><strong>Manajer Unit Usaha:</strong> Bertanggung jawab atas perencanaan, pengawasan operasional, dan pengambilan keputusan strategis.</li>
+                            <li><strong>Petugas Teknis/Pemeliharaan:</strong> Mengelola operasional harian, pakan, kandang, pengumpulan telur, dan kesehatan (minimal 1 petugas untuk skala 700 ekor).</li>
+                            <li><strong>Administrasi & Keuangan:</strong> Menangani pencatatan transaksi, laporan produksi, penjualan, dan transparansi keuangan.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- J, K, L. Pemberdayaan, Kemitraan, Lingkungan -->
+                <div class="grid-3 mb-3">
+                    <div class="content-box hover-popup" style="padding: 1.5rem;">
+                        <h4 style="color: var(--primary);"><i class="fas fa-hands-helping"></i> Pemberdayaan</h4>
+                        <p style="font-size: 0.9rem;">Fokus pada penciptaan lapangan kerja lokal, peningkatan kapasitas SDM melalui pelatihan, mendorong ketahanan pangan desa, serta membuka peluang kemitraan ekonomi masyarakat.</p>
+                    </div>
+                    <div class="content-box hover-popup" style="padding: 1.5rem;">
+                        <h4 style="color: var(--primary);"><i class="fas fa-network-wired"></i> Kemitraan</h4>
+                        <p style="font-size: 0.9rem;">Membangun sinergi dengan dinas terkait, penyuluh pertanian, kelompok tani/peternak, koperasi, LKM, hingga jaringan pasar, toko kelontong, dan UMKM lokal.</p>
+                    </div>
+                    <div class="content-box hover-popup" style="padding: 1.5rem;">
+                        <h4 style="color: var(--primary);"><i class="fas fa-leaf"></i> Lingkungan</h4>
+                        <p style="font-size: 0.9rem;">Pengelolaan peternakan menerapkan prosedur ketat terkait tata kelola limbah, pengendalian bau dan kebisingan, kebersihan kandang, sanitasi, serta kesehatan dan keselamatan kerja.</p>
+                    </div>
+                </div>
+
+                <!-- M. Aspek Keuangan -->
+                <div class="content-box hover-popup section-bg-light" style="border: 2px dashed var(--primary);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 10px;">
+                        <h3 style="margin: 0;"><i class="fas fa-wallet" style="color: var(--primary);"></i> Proyeksi Aspek Keuangan</h3>
+                        <span class="bumdes-badge" style="margin: 0;">Proyeksi Studi Kelayakan</span>
+                    </div>
+                    <div class="grid-3">
+                        <div class="quick-card hover-popup">
+                            <i class="fas fa-coins"></i>
+                            <h4>Investasi Awal</h4>
+                            <p style="font-size: 1.1rem; color: var(--primary);">Rp154.291.000</p>
+                        </div>
+                        <div class="quick-card hover-popup">
+                            <i class="fas fa-chart-bar"></i>
+                            <h4>Estimasi Penjualan</h4>
+                            <p style="font-size: 1.1rem; color: var(--primary);">Rp327.600.000 / thn</p>
+                        </div>
+                        <div class="quick-card hover-popup">
+                            <i class="fas fa-hourglass-half"></i>
+                            <h4>Payback Period</h4>
+                            <p style="font-size: 1.1rem; color: var(--primary);">2 Tahun</p>
+                        </div>
+                        <div class="quick-card hover-popup">
+                            <i class="fas fa-money-check-alt"></i>
+                            <h4>NPV</h4>
+                            <p style="font-size: 1.1rem; color: var(--primary);">Rp91.131.272</p>
+                        </div>
+                        <div class="quick-card hover-popup">
+                            <i class="fas fa-percentage"></i>
+                            <h4>IRR</h4>
+                            <p style="font-size: 1.1rem; color: var(--primary);">34%</p>
+                        </div>
+                        <div class="quick-card hover-popup">
+                            <i class="fas fa-arrow-trend-up"></i>
+                            <h4>ROI (5 Tahun)</h4>
+                            <p style="font-size: 1.1rem; color: var(--primary);">221%</p>
+                        </div>
+                    </div>
+                    <p style="text-align: center; font-size: 0.85rem; margin-top: 15px; color: var(--text-muted);">
+                        *Data di atas merupakan proyeksi dari dokumen Studi Kelayakan, bukan laporan keuangan aktual operasional BUMDes.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==============================================
+             FOOTER
+        =============================================== -->
+        <footer id="main-footer">
+            <div class="container grid-3">
+                <div class="footer-col hover-popup">
+                    <div class="footer-brand desa-identity" style="margin-bottom: 1rem;">
+                        <div class="logo-container">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787878684/Gemini_Generated_Image_4rnmgw4rnmgw4rnm_gtsehb.jpg" alt="Logo Desa Bejaten" class="desa-logo" style="width: 48px; height: 48px; margin: 0; padding: 2px;">
+                        </div>
+                        <div class="desa-title">
+                            <h1 style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 2px; margin: 0;">
+                                <span class="desa-top" style="color: var(--white); font-size: 1.4rem;">Desa</span>
+                                <span class="bejaten-bottom" style="color: #d1d5db; font-size: 1rem;">Bejaten</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <p>Jl. Raya Bejaten<br>Kecamatan Pabelan<br>Kabupaten Semarang<br>Jawa Tengah</p>
+                    <p class="mt-3"><i class="fas fa-phone"></i> +62 857-4066-6663<br><i class="fas fa-envelope"></i> Desabejaten.2014@gmail.com</p>
+                </div>
+                <div class="footer-col hover-popup">
+                    <h3>Lokasi Kami</h3>
+                    <div class="maps-container">
+                        <a href="https://maps.app.goo.gl/we8wxnEXXYysWx7YA?g_st=ac" target="_blank" class="btn btn-primary btn-sm mb-3" style="width:100%;"><i class="fas fa-map-marked-alt"></i> Buka di Google Maps</a>
+                        <a href="https://maps.app.goo.gl/we8wxnEXXYysWx7YA?g_st=ac" target="_blank">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787804788/I_20260327_080551_0000.jpg_kwu5zx.jpg" alt="Peta Google Maps Desa Bejaten" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid rgba(255,255,255,0.2);">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col text-center hover-popup">
+                    <h3>Media Sosial</h3>
+                    <div class="social-links justify-center mt-3">
+                        <a href="https://www.facebook.com/desaa.bejaten?mibextid=ZbWKwL" target="_blank" class="hover-popup"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/desabejaten_official?igsi=NnRnazQzdXlvNmhu" target="_blank" class="hover-popup"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@desabejaten?_r=1&_t=ZS-99EZdlMnLEb" target="_blank" class="hover-popup"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/@desabejaten9575?si=IZNO4eA0TjP5sYWk" target="_blank" class="hover-popup"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Pemerintah Desa Bejaten. All rights reserved.</p>
+            </div>
+        </footer>
+    </div> 
+    
+    <div id="login-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>LOGIN ADMIN</h2>
+                <button id="btn-close-modal" class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-sm text-muted" style="margin-bottom: 20px;">Silakan login untuk mengakses halaman CMS.</p>
+                <div id="login-error" class="alert alert-danger" style="display: none;">Username atau password salah.</div>
+                <form id="form-login">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" id="login-username" class="form-control" placeholder="Masukkan username" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="login-password" class="form-control" placeholder="Masukkan password" required>
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" id="btn-cancel-login" class="btn btn-secondary">Batal</button>
+                        <button type="submit" class="btn btn-primary">MASUK</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Animasi Burung Wajib Ada -->
+    <div id="owl-system" aria-label="Interactive Owl Mascot" tabindex="-1">
+        <div id="owl-wrapper">
+            <img id="owl-img" src="" alt="Owl Mascot">
+            <div id="owl-fx"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
