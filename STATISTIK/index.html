@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>STATISTIK DESA</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistik - Desa Bejaten</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="public-view">
+        <header id="main-header">
+            <div class="header-container">
+                <div class="desa-identity hover-popup">
+                    <div class="logo-container">
+                        <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787878684/Gemini_Generated_Image_4rnmgw4rnmgw4rnm_gtsehb.jpg" alt="Logo Desa Bejaten" class="desa-logo">
+                    </div>
+                    <div class="desa-title">
+                        <h1>
+                            <span class="desa-top">Desa</span>
+                            <span class="bejaten-bottom">Bejaten</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav id="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="#hero" class="hover-popup"><i class="fas fa-home"></i></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Profil ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Visi Misi</a></li>
+                                <li><a href="#">Sejarah desa</a></li>
+                                <li><a href="#">wilayah administrative</a></li>
+                                <li><a href="#">Pemerintah desa</a></li>
+                                <li><a href="#">Peta Desa</a></li>
+                                <li><a href="#">IDM</a></li>
+                                <li><a href="#">SDGS Desa</a></li>
+                                <li><a href="#">Galeri</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Lembaga ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">BPD</a></li>
+                                <li><a href="#">Ketua RW</a></li>
+                                <li><a href="#">Ketua RT</a></li>
+                                <li><a href="#">PKK</a></li>
+                                <li><a href="#">Karang Taruna</a></li>
+                                <li><a href="#">Posyandu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#hero" class="hover-popup" style="color: var(--primary); font-weight: bold;">Statistik ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#persebaran-kk">Persebaran dan Jumlah KK</a></li>
+                                <li><a href="#penduduk">Rekapitulasi Penduduk</a></li>
+                                <li><a href="#kelompok-usia">Klasifikasi Kelompok Usia</a></li>
+                                <li><a href="#kesehatan">Infrastruktur dan Kesehatan</a></li>
+                                <li><a href="#pendidikan">Pendidikan</a></li>
+                                <li><a href="#kesejahteraan">Indeks Kesejahteraan Sosial</a></li>
+                                <li><a href="#ketenagakerjaan">Ketenagakerjaan</a></li>
+                                <li><a href="#pemuda-olahraga">Pemuda dan Olahraga</a></li>
+                                <li><a href="#seni-budaya">Kesenian dan Kebudayaan Lokal</a></li>
+                                <li><a href="#peribadatan">Peribadatan</a></li>
+                                <li><a href="#mata-pencaharian">Mata Pencaharian Utama</a></li>
+                                <li><a href="#komoditi">Potensi Komoditi</a></li>
+                                <li><a href="#kelayakan-rumah">Kelayakan Infrastruktur</a></li>
+                                <li><a href="#sarpras">Sarana dan Prasarana</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">APBDes ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">2024</a></li>
+                                <li><a href="#">2025</a></li>
+                                <li><a href="#">2026</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Artikel ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Berita Desa</a></li>
+                                <li><a href="#">Berita Daerah</a></li>
+                                <li><a href="#">Berita Nasional</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Potensi ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Lapak Desa</a></li>
+                                <li><a href="#">UMKM</a></li>
+                                <li><a href="#">Perpustakaan</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Informasi ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Cek DPT</a></li>
+                                <li><a href="#">Cek Bansos</a></li>
+                                <li><a href="#">Cek PBB</a></li>
+                                <li><a href="#">Buku Saku UU Desa</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Regulasi ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Produk Hukum Desa</a></li>
+                                <li><a href="#">JDIH Semarang</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="hover-popup">Agenda</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">BUMDes ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Profil</a></li>
+                                <li><a href="#">Unit Usaha</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="hover-popup">Pengaduan</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <button id="theme-toggle" class="btn-theme-toggle hover-popup"><i class="fas fa-moon"></i></button>
+                        <div class="dropdown">
+                            <button class="btn btn-admin hover-popup"><i class="fas fa-graduation-cap"></i> PPKO BEM FEB UNDIP ▾</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Profil</a></li>
+                                <li><a href="#">Mentari Cendekia</a></li>
+                                <li><a href="#">Kembang Usaha</a></li>
+                                <li><a href="#">Bijak Usaha</a></li>
+                                <li><a href="#">Siaga Tani</a></li>
+                                <li><a href="#">Sinergi Tani</a></li>
+                                <li><a href="#">Testimoni</a></li>
+                                <li><a href="#">Video Profil</a></li>
+                            </ul>
+                        </div>
+                        <button id="btn-open-login" class="btn btn-admin hover-popup"><i class="fas fa-lock"></i> Admin</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section id="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content hover-popup">
+                <div class="hero-content-flex">
+                    <div class="hero-logo-side">
+                        <div class="hero-logo-glow-wrapper">
+                            <div class="hero-glow-effect"></div>
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787893116/Desain_tanpa_judul_1_e6dlwz.png" alt="Logo Desa Bejaten" class="hero-clean-logo">
+                        </div>
+                    </div>
+                    <div class="hero-text-side">
+                        <h2><span>STATISTIK</span></h2>
+                        <hr class="hero-line">
+                        <p><strong>Data Statistik Desa Bejaten</strong><br>Menyajikan informasi mengenai kependudukan, kesehatan, pendidikan, sosial, ketenagakerjaan, potensi desa, infrastruktur, serta sarana dan prasarana Desa Bejaten.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quick-access">
+            <div class="container grid-7">
+                <a href="#persebaran-kk" class="quick-card hover-popup"><i class="fas fa-map-marker-alt"></i><p>Persebaran KK</p></a>
+                <a href="#penduduk" class="quick-card hover-popup"><i class="fas fa-users"></i><p>Penduduk</p></a>
+                <a href="#kelompok-usia" class="quick-card hover-popup"><i class="fas fa-chart-bar"></i><p>Kelompok Usia</p></a>
+                <a href="#kesehatan" class="quick-card hover-popup"><i class="fas fa-heartbeat"></i><p>Kesehatan</p></a>
+                <a href="#pendidikan" class="quick-card hover-popup"><i class="fas fa-graduation-cap"></i><p>Pendidikan</p></a>
+                <a href="#kesejahteraan" class="quick-card hover-popup"><i class="fas fa-hands-helping"></i><p>Kesejahteraan</p></a>
+                <a href="#ketenagakerjaan" class="quick-card hover-popup"><i class="fas fa-briefcase"></i><p>Ketenagakerjaan</p></a>
+                
+                <a href="#pemuda-olahraga" class="quick-card hover-popup"><i class="fas fa-running"></i><p>Pemuda & Olahraga</p></a>
+                <a href="#seni-budaya" class="quick-card hover-popup"><i class="fas fa-music"></i><p>Seni & Budaya</p></a>
+                <a href="#peribadatan" class="quick-card hover-popup"><i class="fas fa-mosque"></i><p>Peribadatan</p></a>
+                <a href="#mata-pencaharian" class="quick-card hover-popup"><i class="fas fa-user-tie"></i><p>Mata Pencaharian</p></a>
+                <a href="#komoditi" class="quick-card hover-popup"><i class="fas fa-seedling"></i><p>Komoditi</p></a>
+                <a href="#kelayakan-rumah" class="quick-card hover-popup"><i class="fas fa-home"></i><p>Kelayakan Rumah</p></a>
+                <a href="#sarpras" class="quick-card hover-popup"><i class="fas fa-road"></i><p>Sarpras</p></a>
+            </div>
+        </section>
+
+        <section id="persebaran-kk" class="section-bg-light">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Persebaran dan Jumlah KK</h2>
+                </div>
+                <div class="grid-4">
+                    <div class="stat-card hover-popup">
+                        <i class="fas fa-map-pin"></i>
+                        <h3>174</h3>
+                        <p>Dusun Krajan</p>
+                        <small class="text-muted">1 RW | 4 RT</small>
+                    </div>
+                    <div class="stat-card hover-popup">
+                        <i class="fas fa-map-pin"></i>
+                        <h3>129</h3>
+                        <p>Dusun Belon</p>
+                        <small class="text-muted">1 RW | 3 RT</small>
+                    </div>
+                    <div class="stat-card hover-popup">
+                        <i class="fas fa-map-pin"></i>
+                        <h3>104</h3>
+                        <p>Dusun Mranggen</p>
+                        <small class="text-muted">1 RW | 3 RT</small>
+                    </div>
+                    <div class="stat-card stat-total hover-popup">
+                        <i class="fas fa-users-cog"></i>
+                        <h3>407</h3>
+                        <p>Total Kepala Keluarga</p>
+                        <small class="text-muted">Desa Bejaten</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="penduduk">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Rekapitulasi Penduduk</h2>
+                </div>
+                <div class="grid-3 align-center-grid">
+                    <div class="stat-card hover-popup">
+                        <i class="fas fa-male" style="color: #3B82C4;"></i>
+                        <h3 style="color: #3B82C4;">572</h3>
+                        <p>Laki-laki</p>
+                    </div>
+                    <div class="content-box hover-popup text-center" style="padding: 1rem;">
+                        <div id="chart-penduduk" style="height: 250px;"></div>
+                    </div>
+                    <div class="stat-card hover-popup">
+                        <i class="fas fa-female" style="color: #E11484;"></i>
+                        <h3 style="color: #E11484;">614</h3>
+                        <p>Perempuan</p>
+                    </div>
+                </div>
+                <div class="content-box text-center mt-4 hover-popup" style="background: var(--primary); color: white;">
+                    <h2 style="color: white; font-size: 2.5rem; margin-bottom: 0;">1.186</h2>
+                    <p style="color: white; margin: 0; font-size: 1.2rem;">Total Penduduk Desa Bejaten</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kelompok-usia" class="section-bg-light">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Klasifikasi Kelompok Usia</h2>
+                </div>
+                <div class="content-box hover-popup">
+                    <div id="chart-usia" style="width:100%; height: 450px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kesehatan">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Infrastruktur dan Kesehatan</h2>
+                </div>
+                <div class="grid-3">
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-user-md"></i> Tenaga Medis & Keperawatan</h3>
+                        <table class="stat-table">
+                            <tr><th>Kategori</th><th>Jumlah</th></tr>
+                            <tr><td>Dokter Umum</td><td>0</td></tr>
+                            <tr><td>Dokter Spesialis</td><td>0</td></tr>
+                            <tr><td>Bidan</td><td>1</td></tr>
+                            <tr><td>Perawat</td><td>1</td></tr>
+                        </table>
+                    </div>
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-hands-helping"></i> Tenaga Pendukung Kesehatan</h3>
+                        <table class="stat-table">
+                            <tr><th>Kategori</th><th>Jumlah</th></tr>
+                            <tr><td>Kader Kesehatan</td><td>33</td></tr>
+                            <tr><td>Dukun Bayi</td><td>1</td></tr>
+                            <tr><td>Desa Siaga</td><td>1</td></tr>
+                            <tr><td>Posyandu</td><td>3</td></tr>
+                            <tr><td>Polindes</td><td>1</td></tr>
+                            <tr><td>POD / Paraji Sunat</td><td>0</td></tr>
+                        </table>
+                    </div>
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-hospital"></i> Prasarana Kesehatan</h3>
+                        <table class="stat-table">
+                            <tr><th>Fasilitas</th><th>Jumlah</th></tr>
+                            <tr><td>Polindes</td><td>1</td></tr>
+                            <tr><td>Posyandu</td><td>3</td></tr>
+                            <tr><td>Puskesmas / Pustu</td><td>0</td></tr>
+                            <tr><td>Poskesdes</td><td>0</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pendidikan" class="section-bg-light">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Pendidikan</h2>
+                </div>
+                <div class="grid-3">
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-chalkboard-teacher"></i> Peserta Didik & Guru</h3>
+                        <table class="stat-table">
+                            <tr><th>Tingkat</th><th>Guru</th><th>Murid</th></tr>
+                            <tr><td>PAUD</td><td>4</td><td>21</td></tr>
+                            <tr><td>TK/RA</td><td>3</td><td>28</td></tr>
+                            <tr><td>SD/MI</td><td>10</td><td>77</td></tr>
+                            <tr><td>SMP/MTs</td><td colspan="2" class="text-center">Tidak ada data</td></tr>
+                            <tr><td>SMA</td><td colspan="2" class="text-center">Tidak ada data</td></tr>
+                        </table>
+                    </div>
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-school"></i> Sarana Pendidikan</h3>
+                        <table class="stat-table">
+                            <tr><th>Fasilitas</th><th>Jumlah</th></tr>
+                            <tr><td>TK/PAUD/RA</td><td>2</td></tr>
+                            <tr><td>MI/DTA</td><td>1</td></tr>
+                            <tr class="table-total"><td>Total Sarana</td><td>3</td></tr>
+                        </table>
+                    </div>
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-user-graduate"></i> Tingkat Kelulusan</h3>
+                        <table class="stat-table">
+                            <tr><th>Tingkat</th><th>L</th><th>P</th><th>Total</th></tr>
+                            <tr><td>SD/Sederajat</td><td>498</td><td>495</td><td>993</td></tr>
+                            <tr><td>SMP/Sederajat</td><td>265</td><td>269</td><td>534</td></tr>
+                            <tr><td>SMA/Sederajat</td><td>176</td><td>141</td><td>317</td></tr>
+                            <tr><td>S-1/Sederajat</td><td>34</td><td>34</td><td>68</td></tr>
+                            <tr class="table-total"><td>Total Data</td><td>-</td><td>-</td><td>1.912</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kesejahteraan">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Indeks Kesejahteraan Sosial</h2>
+                </div>
+                <div class="grid-4">
+                    <div class="stat-card hover-popup">
+                        <i class="fas fa-house-damage text-danger"></i>
+                        <h3>12</h3>
+                        <p>Rumah Tidak Layak Huni</p>
+                    </div>
+                    <div class="stat-card hover-popup">
+                        <i class="fas fa-recycle text-warning"></i>
+                        <h3>5</h3>
+                        <p>Pemulung</p>
+                    </div>
+                    <div class="stat-card hover-popup">
+                        <i class="fas fa-wheelchair text-primary"></i>
+                        <h3>2</h3>
+                        <p>Penyandang Cacat</p>
+                    </div>
+                    <div class="stat-card hover-popup">
+                        <i class="fas fa-users-slash text-danger"></i>
+                        <h3>1</h3>
+                        <p>Keluarga Bermasalah Psikologis</p>
+                    </div>
+                </div>
+                <div class="content-box hover-popup mt-4">
+                    <p class="text-center text-muted"><i class="fas fa-info-circle"></i> Data Nihil (0) pada Kategori: Anak Terlantar, Anak Nakal, Anak Balita Terlantar, Anak Jalanan, Lansia Terlantar, Pengemis, Gelandangan, Korban NAPZA, PSK, Eks Narapidana, Keluarga Miskin Sosial, Korban Bencana Alam, dan Masyarakat di daerah bencana.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ketenagakerjaan" class="section-bg-light">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Ketenagakerjaan</h2>
+                </div>
+                <div class="grid-3">
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-tractor"></i> Pertanian & Lepas</h3>
+                        <table class="stat-table">
+                            <tr><th>Pekerjaan</th><th>L</th><th>P</th></tr>
+                            <tr><td>Petani</td><td>70</td><td>38</td></tr>
+                            <tr><td>Buruh Harian Lepas</td><td>47</td><td>11</td></tr>
+                            <tr><td>Buruh Tani</td><td>1</td><td>1</td></tr>
+                            <tr><td>Buruh Migran</td><td>4</td><td>4</td></tr>
+                        </table>
+                    </div>
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-building"></i> Formal & Pemerintahan</h3>
+                        <table class="stat-table">
+                            <tr><th>Pekerjaan</th><th>L</th><th>P</th></tr>
+                            <tr><td>Karyawan Swasta</td><td>133</td><td>96</td></tr>
+                            <tr><td>Wiraswasta</td><td>71</td><td>49</td></tr>
+                            <tr><td>PNS</td><td>8</td><td>5</td></tr>
+                            <tr><td>Perangkat Desa</td><td>5</td><td>4</td></tr>
+                            <tr><td>Pensiunan</td><td>9</td><td>2</td></tr>
+                            <tr><td>Karyawan BUMN / TNI</td><td>4</td><td>0</td></tr>
+                            <tr><td>Kades / POLRI</td><td>1</td><td>1</td></tr>
+                        </table>
+                    </div>
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-ellipsis-h"></i> Jasa & Lain-lain</h3>
+                        <table class="stat-table">
+                            <tr><th>Pekerjaan</th><th>L</th><th>P</th></tr>
+                            <tr><td>Guru</td><td>1</td><td>12</td></tr>
+                            <tr><td>Konstruksi / Dosen / Perawat</td><td>3</td><td>0</td></tr>
+                            <tr><td>Perdagangan / Transportasi</td><td>0</td><td>2</td></tr>
+                            <tr><td>Belum/Tidak Bekerja</td><td>139</td><td>163</td></tr>
+                            <tr><td>Mengurus Rumah Tangga</td><td>0</td><td>154</td></tr>
+                            <tr><td>Pelajar/Mahasiswa</td><td>79</td><td>72</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pemuda-olahraga">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Pemuda dan Olahraga</h2>
+                </div>
+                <div class="grid-4">
+                    <div class="stat-card hover-popup">
+                        <i class="fas fa-volleyball-ball"></i>
+                        <h3>1</h3>
+                        <p>Klub Bola Volly</p>
+                        <small class="badge badge-active">Klub Aktif</small>
+                    </div>
+                    <div class="stat-card hover-popup">
+                        <i class="fas fa-table-tennis"></i>
+                        <h3>1</h3>
+                        <p>Klub Bulu Tangkis</p>
+                        <small class="badge badge-active">Klub Aktif</small>
+                    </div>
+                    <div class="stat-card hover-popup" style="opacity: 0.6;">
+                        <i class="fas fa-futbol"></i>
+                        <h3>0</h3>
+                        <p>Klub Sepak Bola / Futsal</p>
+                        <small class="badge badge-inactive">Tidak Terdaftar</small>
+                    </div>
+                    <div class="stat-card hover-popup" style="opacity: 0.6;">
+                        <i class="fas fa-user-ninja"></i>
+                        <h3>0</h3>
+                        <p>Klub Pencak Silat</p>
+                        <small class="badge badge-inactive">Tidak Terdaftar</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seni-budaya" class="section-bg-light">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Kesenian dan Kebudayaan Lokal</h2>
+                </div>
+                <div class="grid-2">
+                    <div class="admin-card text-center hover-popup">
+                        <i class="fas fa-drum" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                        <h3>Kesenian Rebana</h3>
+                        <h2 style="font-size: 2.5rem; color: var(--text-main);">2 <span style="font-size: 1rem;">Grup</span></h2>
+                        <p class="text-muted"><i class="fas fa-map-marker-alt"></i> Lokasi: Bejaten</p>
+                    </div>
+                    <div class="admin-card text-center hover-popup">
+                        <i class="fas fa-drum-steelpan" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                        <h3>Kesenian Drumband</h3>
+                        <h2 style="font-size: 2.5rem; color: var(--text-main);">1 <span style="font-size: 1rem;">Grup</span></h2>
+                        <p class="text-muted"><i class="fas fa-map-marker-alt"></i> Lokasi: MI Bejaten</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="peribadatan">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Peribadatan</h2>
+                </div>
+                <div class="grid-4">
+                    <div class="stat-card hover-popup">
+                        <i class="fas fa-mosque"></i>
+                        <h3>7</h3>
+                        <p>Musholah</p>
+                    </div>
+                    <div class="stat-card hover-popup">
+                        <i class="fas fa-book-reader"></i>
+                        <h3>2</h3>
+                        <p>Pondok Pesantren</p>
+                    </div>
+                    <div class="stat-card hover-popup">
+                        <i class="fas fa-place-of-worship"></i>
+                        <h3>1</h3>
+                        <p>Masjid Raya</p>
+                    </div>
+                    <div class="stat-card hover-popup">
+                        <i class="fas fa-kaaba"></i>
+                        <h3>1</h3>
+                        <p>Madrasah</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mata-pencaharian" class="section-bg-light">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Mata Pencaharian Utama</h2>
+                    <p class="badge badge-year">Tahun 2024</p>
+                </div>
+                <div class="content-box hover-popup text-center mb-4">
+                    <h3 style="color: var(--primary);">Status: Desa Pertanian</h3>
+                    <p>Meskipun berstatus sebagai desa pertanian, terdapat diversifikasi profesi yang dominan di masyarakat.</p>
+                </div>
+                <div class="content-box hover-popup">
+                    <div id="chart-pekerjaan" style="height: 400px; width: 100%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="komoditi">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Potensi Komoditi</h2>
+                </div>
+                <div class="grid-3">
+                    <div class="admin-card text-center hover-popup">
+                        <i class="fas fa-seedling" style="font-size: 3rem; color: #279B48; margin-bottom: 1rem;"></i>
+                        <h3>Padi</h3>
+                        <h2 style="font-size: 2rem; color: var(--text-main); margin-bottom: 15px;">1.368 <span style="font-size: 1rem;">Ton/tahun</span></h2>
+                        <table class="stat-table">
+                            <tr><td>Harga Desa</td><td>Rp 5.000/kg</td></tr>
+                            <tr><td>Harga Pasar</td><td>Rp 5.200/kg</td></tr>
+                        </table>
+                    </div>
+                    <div class="admin-card text-center hover-popup">
+                        <i class="fas fa-leaf" style="font-size: 3rem; color: #F99D26; margin-bottom: 1rem;"></i>
+                        <h3>Jagung</h3>
+                        <h2 style="font-size: 2rem; color: var(--text-main); margin-bottom: 15px;">270 <span style="font-size: 1rem;">Ton/tahun</span></h2>
+                        <table class="stat-table">
+                            <tr><td>Harga Desa</td><td>Rp 3.500/kg</td></tr>
+                            <tr><td>Harga Pasar</td><td>Rp 3.700/kg</td></tr>
+                        </table>
+                    </div>
+                    <div class="admin-card text-center hover-popup">
+                        <i class="fas fa-tractor" style="font-size: 3rem; color: #8F1838; margin-bottom: 1rem;"></i>
+                        <h3>Kedelai</h3>
+                        <h2 style="font-size: 2rem; color: var(--text-main); margin-bottom: 15px;">100 <span style="font-size: 1rem;">Ton/tahun</span></h2>
+                        <table class="stat-table">
+                            <tr><td>Harga Desa</td><td>Rp 10.000/kg</td></tr>
+                            <tr><td>Harga Pasar</td><td>Rp 10.500/kg</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kelayakan-rumah" class="section-bg-light">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Kelayakan Infrastruktur</h2>
+                </div>
+                <div class="content-box hover-popup">
+                    <div class="grid-2 align-center-grid">
+                        <div id="chart-rumah" style="height: 350px;"></div>
+                        <div>
+                            <div class="admin-card mb-3" style="border-left: 5px solid #279B48;">
+                                <h3>304 Unit</h3>
+                                <p>Rumah Layak Huni</p>
+                            </div>
+                            <div class="admin-card" style="border-left: 5px solid #E01A22;">
+                                <h3>12 Unit</h3>
+                                <p>Rumah Tidak Layak Huni</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sarpras">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Sarana dan Prasarana</h2>
+                </div>
+                <div class="grid-3">
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-building"></i> Perkantoran & Utilitas</h3>
+                        <table class="stat-table">
+                            <tr><th>Fasilitas</th><th>Kondisi / Keterangan</th></tr>
+                            <tr><td>Kantor Kepala Desa</td><td>Baik</td></tr>
+                            <tr><td>Balai Desa</td><td>Tersedia</td></tr>
+                            <tr><td>Kapasitas Listrik</td><td>900 Watt</td></tr>
+                            <tr><td>Air Bersih</td><td>Sumur Bor</td></tr>
+                        </table>
+                    </div>
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-road"></i> Jalan Desa</h3>
+                        <table class="stat-table">
+                            <tr><th>Jenis Jalan</th><th>Jumlah</th><th>Kondisi</th></tr>
+                            <tr><td>Jalan Aspal Desa</td><td>3</td><td>2 Baik, 1 Rusak</td></tr>
+                            <tr><td>Jalan Konblok/Beton</td><td>3</td><td>Seluruhnya Baik</td></tr>
+                        </table>
+                    </div>
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-route"></i> Jalan Penghubung</h3>
+                        <table class="stat-table">
+                            <tr><th>Jenis Jalan</th><th>Jumlah</th><th>Kondisi</th></tr>
+                            <tr><td>Jalan Antar Desa (Aspal)</td><td>2</td><td>1 Baik, 1 Rusak</td></tr>
+                            <tr><td>Jalan Kabupaten</td><td>1</td><td>Baik</td></tr>
+                            <tr><td>Jalan Provinsi / Lainnya</td><td>0</td><td>Tidak ada</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="main-footer">
+            <div class="container grid-3">
+                <div class="footer-col hover-popup">
+                    <!-- COPY IDENTITAS LOGO DARI HEADER -->
+                    <div class="desa-identity" style="margin-bottom: 1.5rem;">
+                        <div class="logo-container">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787878684/Gemini_Generated_Image_4rnmgw4rnmgw4rnm_gtsehb.jpg" alt="Logo Desa Bejaten" class="desa-logo">
+                        </div>
+                        <div class="desa-title">
+                            <h1>
+                                <span class="desa-top">Desa</span>
+                                <span class="bejaten-bottom">Bejaten</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <p>Jl. Raya Bejaten<br>Kecamatan Pabelan<br>Kabupaten Semarang<br>Jawa Tengah</p>
+                    <p class="mt-3"><i class="fas fa-phone"></i> +62 857-4066-6663<br><i class="fas fa-envelope"></i> Desabejaten.2014@gmail.com</p>
+                </div>
+                <div class="footer-col hover-popup">
+                    <h3>Lokasi Kami</h3>
+                    <div class="maps-container">
+                        <a href="https://maps.app.goo.gl/we8wxnEXXYysWx7YA?g_st=ac" target="_blank" class="btn btn-primary btn-sm mb-3" style="width:100%;"><i class="fas fa-map-marked-alt"></i> Buka di Google Maps</a>
+                        <a href="https://maps.app.goo.gl/we8wxnEXXYysWx7YA?g_st=ac" target="_blank">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787804788/I_20260327_080551_0000.jpg_kwu5zx.jpg" alt="Peta Google Maps Desa Bejaten" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid rgba(255,255,255,0.2);">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col text-center hover-popup">
+                    <h3>Media Sosial</h3>
+                    <div class="social-links justify-center mt-3">
+                        <a href="https://www.facebook.com/desaa.bejaten?mibextid=ZbWKwL" target="_blank" class="hover-popup"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/desabejaten_official?igsi=NnRnazQzdXlvNmhu" target="_blank" class="hover-popup"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@desabejaten?_r=1&_t=ZS-99EZdlMnLEb" target="_blank" class="hover-popup"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/@desabejaten9575?si=IZNO4eA0TjP5sYWk" target="_blank" class="hover-popup"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Pemerintah Desa Bejaten. All rights reserved.</p>
+            </div>
+        </footer>
+    </div> 
+
+    <div id="login-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>LOGIN ADMIN</h2>
+                <button id="btn-close-modal" class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-sm text-muted" style="margin-bottom: 20px;">Silakan login untuk mengakses halaman CMS.</p>
+                <div id="login-error" class="alert alert-danger" style="display: none;">Username atau password salah.</div>
+                <form id="form-login">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" id="login-username" class="form-control" placeholder="Masukkan username" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="login-password" class="form-control" placeholder="Masukkan password" required>
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" id="btn-cancel-login" class="btn btn-secondary">Batal</button>
+                        <button type="submit" class="btn btn-primary">MASUK</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="owl-system" aria-label="Interactive Owl Mascot" tabindex="-1">
+        <div id="owl-wrapper">
+            <img id="owl-img" src="" alt="Owl Mascot">
+            <div id="owl-fx"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
