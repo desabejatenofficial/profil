@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>PROFIL DESA</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Bejaten - Pemerintah Desa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="public-view">
+        <header id="main-header">
+            <div class="header-container">
+                <div class="desa-identity hover-popup">
+                    <div class="logo-container">
+                        <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787878684/Gemini_Generated_Image_4rnmgw4rnmgw4rnm_gtsehb.jpg" alt="Logo Desa Bejaten" class="desa-logo">
+                    </div>
+                    <div class="desa-title">
+                        <h1>
+                            <span class="desa-top">Desa</span>
+                            <span class="bejaten-bottom">Bejaten</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav id="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="#hero" class="hover-popup"><i class="fas fa-home"></i></a></li>
+                        <li class="dropdown">
+                            <!-- Menu Profil Diberikan class 'active-menu' agar berwarna ungu/berbeda -->
+                            <a href="#profil" class="hover-popup active-menu">Profil ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#visi-misi">Visi Misi</a></li>
+                                <li><a href="#sejarah">Sejarah desa</a></li>
+                                <li><a href="#wilayah">wilayah administrative</a></li>
+                                <li><a href="#pemerintah">Pemerintah desa</a></li>
+                                <li><a href="#peta">Peta Desa</a></li>
+                                <li><a href="#idm">IDM</a></li>
+                                <li><a href="#sdgs">SDGS Desa</a></li>
+                                <li><a href="#galeri">Galeri</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Lembaga ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">BPD</a></li>
+                                <li><a href="#">Ketua RW</a></li>
+                                <li><a href="#">Ketua RT</a></li>
+                                <li><a href="#">PKK</a></li>
+                                <li><a href="#">Karang Taruna</a></li>
+                                <li><a href="#">Posyandu</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Statistik ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Persebaran dan Jumlah KK</a></li>
+                                <li><a href="#">Rekapitulasi Penduduk</a></li>
+                                <li><a href="#">Klasifikasi Kelompok Usia</a></li>
+                                <li><a href="#">Infrastruktur dan Kesehatan</a></li>
+                                <li><a href="#">Pendidikan</a></li>
+                                <li><a href="#">Indeks Kesejahteraan Sosial</a></li>
+                                <li><a href="#">Ketenagakerjaan</a></li>
+                                <li><a href="#">Pemuda dan Olahraga</a></li>
+                                <li><a href="#">Kesenian dan Kebudayaan Lokal</a></li>
+                                <li><a href="#">Peribadatan</a></li>
+                                <li><a href="#">Mata Pencaharian Utama (Tahun 2024)</a></li>
+                                <li><a href="#">Potensi Komoditi</a></li>
+                                <li><a href="#">Kelayakan Infrastruktur</a></li>
+                                <li><a href="#">Sarana dan Prasarana</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">APBDes ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">2025</a></li>
+                                <li><a href="#">2026</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Artikel ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Berita Desa</a></li>
+                                <li><a href="#">Berita Kabupaten</a></li>
+                                <li><a href="#">Berita Provinsi</a></li>
+                                <li><a href="#">Berita Nasional</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Potensi ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Lapak Desa</a></li>
+                                <li><a href="#">UMKM</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Informasi ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Cek DPT</a></li>
+                                <li><a href="#">Cek Bansos</a></li>
+                                <li><a href="#">Cek PBB</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">Regulasi ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Peraturan Desa</a></li>
+                                <li><a href="#">JDIH Semarang</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="hover-popup">Agenda</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="hover-popup">BUMDes ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Unit Air</a></li>
+                                <li><a href="#">Unit Peternakan Ayam KUB</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="hover-popup">Pengaduan</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <button id="theme-toggle" class="btn-theme-toggle hover-popup"><i class="fas fa-moon"></i></button>
+                        
+                        <!-- Button PPKO BEM FEB UNDIP (Dropdown/Submenu Dihilangkan) -->
+                        <button class="btn btn-admin hover-popup"><i class="fas fa-graduation-cap"></i> PPKO BEM FEB UNDIP</button>
+                        
+                        <button id="btn-open-login" class="btn btn-admin hover-popup"><i class="fas fa-lock"></i> Admin</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        
+        <section id="hero">
+            <div class="hero-overlay"></div>
+            <!-- hover-popup dihilangkan dari hero-content agar background tidak berefek pop-up -->
+            <div class="hero-content">
+                <div class="hero-content-flex">
+                    <div class="hero-logo-side">
+                        <div class="hero-logo-glow-wrapper hover-popup">
+                            <div class="hero-glow-effect"></div>
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787893116/Desain_tanpa_judul_1_e6dlwz.png" alt="Logo Desa Bejaten" class="hero-clean-logo">
+                        </div>
+                    </div>
+                    <div class="hero-text-side hover-popup">
+                        <h2>Selamat Datang di<br><span>Desa Bejaten</span></h2>
+                        <hr class="hero-line">
+                        <p>Website Resmi Pemerintah Desa Bejaten,<br>Kecamatan Pabelan, Kabupaten Semarang</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="quick-access">
+            <div class="container grid-8">
+                <a href="#visi-misi" class="quick-card hover-popup"><i class="fas fa-bullseye"></i><p>Visi Misi</p></a>
+                <a href="#sejarah" class="quick-card hover-popup"><i class="fas fa-book-open"></i><p>Sejarah Desa</p></a>
+                <a href="#peta" class="quick-card hover-popup"><i class="fas fa-map-marked-alt"></i><p>Peta Desa</p></a>
+                <a href="#wilayah" class="quick-card hover-popup"><i class="fas fa-layer-group"></i><p>Wil. Administratif</p></a>
+                <a href="#pemerintah" class="quick-card hover-popup"><i class="fas fa-sitemap"></i><p>Pemerintah Desa</p></a>
+                <a href="#idm" class="quick-card hover-popup"><i class="fas fa-chart-pie"></i><p>IDM</p></a>
+                <a href="#sdgs" class="quick-card hover-popup"><i class="fas fa-globe"></i><p>SDGS Desa</p></a>
+                <a href="#galeri" class="quick-card hover-popup"><i class="fas fa-images"></i><p>Galeri</p></a>
+            </div>
+        </section>
+        <section id="visi-misi" class="section-bg-light">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Visi & Misi</h2>
+                </div>
+                <div class="content-box hover-popup">
+                    <h3>Visi</h3>
+                    <p>Visi adalah suatu gambaran atau cita-cita tentang keadaan masa depan yang diinginkan dengan melihat potensi dan kebutuhan Desa. Berdasarkan kondisi saat ini dan tantangan yang akan dihadapi dalam tahun mendatang serta dengan mempertimbangkan modal dasar yang dimiliki, maka Visi pembangunan Desa Bejaten, Tahun 2019 - 2025 menjadi 2019 — 2027 adalah:</p>
+                    <blockquote class="vision-quote">
+                        "MELAYANI DAN MEMBERDAYAKAN MASYARAKAT DEMI TERWUJUDNYA DESA BEJATEN YANG MAJU, MANDIRI DAN SEJAHTERA"
+                    </blockquote>
+                    <h3 class="mt-4">Misi</h3>
+                    <p>Sebagaimana penyusunan visi, pendekatan yang dilakukan dalam menyusun misi adalah dengan menggunakan pendekatan partisipatif dan mempertimbangkan potensi dan kebutuhan Desa. Misi memuat pernyataan-pernyataan yang harus dilakukan Desa agar Visi desa tersebut dapat tercapai. Adapun Misi Desa Bejaten adalah sbb :</p>
+                    <ul class="mission-list">
+                        <li>Mengoptimalkan kinerja Pejabat Desa sesuai dengan tugas pokok dan Fungsi Perangkat Desa demi pelayanan yang baik bagi masyarakat Desa.</li>
+                        <li>Melaksanakan koordinasi antar mitra kerja.</li>
+                        <li>Meningkatkan Sumber Daya Manusia (SDM) dan Pemanfaatan Sumber Daya Alam (SDA) untuk kesejahteraan masyarakat.</li>
+                        <li>Meningkatkan kapasitas kelembagaan yang ada di Desa Bejaten.</li>
+                        <li>Meningkatkan kualitas kesehatan masyarakat.</li>
+                        <li>Melaksanakan kegiatan pembangunan secara partisipasif mulai perencanaan sampai dengan pelaksanaan pembangunan.</li>
+                        <li>Evaluasi kinerja pemerintah dan pembangunan segala bidang pada periode sebelumnya.</li>
+                        <li>Melanjutkan kegiatan pembangunan segala bidang yang belum selesai pada periode sebelumnya.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="sejarah">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Sejarah Desa</h2>
+                </div>
+                <div class="content-box hover-popup">
+                    <p>Desa Bejaten merupakan satuan wilayah pemerintahan yang berada di Kecamatan Pabelan Kabupaten Semarang berdasarkan struktur pemerintahannya merupakan Desa / Kalurahan yang dipimpin seorang Kepala Desa. Ada Dusun yang merupakan pembagian wilayah administrasi. Dibawah Dusun terbagi lagi dalam satuan wilayah administrasi RW dan RT yang jumlah keseluruhan dalam satu Desa / Kalurahan ada 3 RW 10 RT.</p>
+                    <p>Setiap Desa pasti memiliki sejarah dan latar belakang sendiri-sendiri, dari satu Desa dengan Desa yang lain mempunyai latar belakang peradaban yang berbeda. Hal ini dapat dilihat dari watak dan karakter dari masing-masing Desa. <strong>"SEJE DESO MOWO CHORO"</strong> Sejarah Desa atau Desa seringkali ada dalam dongeng dari orang-orang terdahulu yang biasanya diceritakan dari generasi ke generasi, yang akhirnya sampai sekarang menjadi peninggalan sejarah yang tak ternilai harganya. Diharapkan kepada putra-putra Desa mengetahui sejarah tentang desanya untuk saat ini, namun dengan panjangnya rantai sejarah dari generasi terdahulu, genersi yang sekarang hanya ditinggali dengan dongeng-dongeng ketidak pastian.</p>
+                    <p>Sepertihalnya Desa Bejaten juga memiliki sejarah, yang sampai saat ini belum dapat digali tentang kebenaran dari cerita itu, karena sejarah yang ada tingal dari mulut ke mulut, yang tragisnya lagi orang-orang yang dianggap tahu sejarah tentang Desa Bejaten sudah tidak ada.</p>
+                    <p>Desa Bejaten terletak di sebelah utara timur laut kota kecil yaitu kota Salatiga, menurut beberapa nara sumber yang berhasil ditemui dalam rangka mengkorek informasi yang dijadikan pedoman untuk mengetahui "asal usul" Desa Bejaten dahulu namanya Pejaten semasa penjajahan Belanda bangsa Belanda tidak bisa mengucapkan kata "Pe" bisanya "Be" sehingga sampai sekarang Desa Pejaten terpanggil Desa Bejaten. Desa Bejaten mempunyai dua fersi sejarah yang sampai sekarang belum tahu kepastiannya.</p>
+                    <p>Pada jaman kerajan. Wilayah salatiga dan sekitarnya adalah dibawah kerajaan mataram, termasuk hutan jati yang berada di sebelah timur laut Salatiga. Desa hutan jati tersebut terdapat seorang pertapa yang tidak diketahui nama dan asal-usulnya, menetap dan bermukim di hutan jati tersebut untuk pengingat-ingat wilayah tersebut di berinama Pejaten, pengambilan nama Pejaten tersebut sampai sekarang belum tahu asal-usulnya. Ada dua fersi sejarah yang sampai sekarang belum tahu kepastiannya. Versi pertama apakah sejarah Pejaten pada waktu itu di ambil dari sejarah yang karena dulu Desa Hutan jati, kalau itu sejarah yang terjadi ya ada benarnya karena sampai sekarang masih sering ditemukan tunggak-tunggak jati yang mempunyai diameter lebih dari 1 meter yang mungkin usianya sudah ratusan tahun sewaktu ditebang.</p>
+                    <p>Versi kedua. Alkisah, dulu hidup seorang pertapa tua yang bernama mbah jati, beliau sebatang kara, menurut sumber sejarah beliau meninggal tanpa meninggalkan keturunan dan makamnya masih terawat sampai sekarang. Apakah mbah Jati dinamakan Mbah Jati karena hidup di hutan Jati atau memang kebetulan nama pertapa tersebut juga mbah Jati yang hidup di hutan jati. karena kedua fersi tersebut masih mempunyai bukti sejarah semua yaitu kalau Desa Pejaten dulu dinamai karena hutan jati, sekarang masih ada bukti dengan sering ditemukannya tunggak jati yang kalau diprediksi sudah ratusan tahun usianya. Dan kalau Desa Pejaten dulu dinamai karena yang bukak alas itu mbah jati juga ada benarnya karena masih ada bukti, dengan adanya makam Mbah Jati dan keduanya merupakan bukti sejarah, kebenarannya, Wallahu Alam bisshowab.</p>
+                </div>
+            </div>
+        </section>
+        <section id="wilayah" class="section-bg-light">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Wilayah Administratif</h2>
+                </div>
+                <div class="grid-2">
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-map-marker-alt"></i> 1. Ringkasan Wilayah</h3>
+                        <ul>
+                            <li><strong>Lokasi:</strong> Desa Bejaten, Kecamatan Pabelan, Kabupaten Semarang</li>
+                            <li><strong>Luas Total Wilayah:</strong> 101,1738 Ha</li>
+                            <li><strong>Pembagian Admin:</strong> 3 Dusun | 3 RW | 10 RT</li>
+                            <li><strong>Jumlah KK:</strong> 945 KK</li>
+                            <li><strong>Demografi:</strong> Total 2.975 jiwa (1.501 L | 1.474 P)</li>
+                        </ul>
+                    </div>
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-globe-asia"></i> 2. Letak & Koordinat</h3>
+                        <ul>
+                            <li><strong>Bujur Timur:</strong> 110°39'3" s/d 110°52'8" BT</li>
+                            <li><strong>Lintang Selatan:</strong> 7°28'7" s/d 7°35'7" LS</li>
+                        </ul>
+                    </div>
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-compass"></i> 3. Batas Wilayah</h3>
+                        <ul>
+                            <li><strong>Utara:</strong> Desa Giling dan Desa Padaan</li>
+                            <li><strong>Selatan:</strong> Desa Gelawan</li>
+                            <li><strong>Timur:</strong> Desa Kadirejo</li>
+                            <li><strong>Barat:</strong> Wilayah Kauman Lor dan Kelurahan Kauman Kidul (Kota Salatiga)</li>
+                        </ul>
+                    </div>
+                    <div class="admin-card hover-popup">
+                        <h3><i class="fas fa-chart-area"></i> 4. Rincian Luas Dusun</h3>
+                        <ul>
+                            <li><strong>Dusun Krajan:</strong> 42,3909 Ha</li>
+                            <li><strong>Dusun Belon:</strong> 40,9366 Ha</li>
+                            <li><strong>Dusun Mranggen:</strong> 18,8463 Ha</li>
+                            <li><strong>Total Luas:</strong> 101,1738 Ha</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="peta">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Peta Desa</h2>
+                </div>
+                <div class="peta-container hover-popup">
+                    <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787804788/I_20260327_080551_0000.jpg_kwu5zx.jpg" alt="Peta Desa Bejaten" class="img-fluid border-rounded shadow">
+                </div>
+            </div>
+        </section>
+        <section id="pemerintah" class="section-bg-light">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Pemerintah Desa</h2>
+                    <p>Struktur Organisasi Pemerintahan Desa Bejaten</p>
+                </div>
+
+                <!-- Foto Struktur Ditambahkan Di Sini Dengan Efek Pop-up & Cahaya -->
+                <div class="struktur-utama-img-container">
+                    <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1788900614/WhatsApp_Image_2026-09-08_at_10.40.11_vat5iy.jpg" alt="Struktur Perangkat Desa" class="struktur-img" tabindex="0">
+                </div>
+
+                <div class="org-chart">
+                    <div class="org-level">
+                        <div class="org-card hover-popup">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787805655/WhatsApp_Image_2026-08-24_at_10.07.50_qmfenw.jpg" alt="Salafuddin rofiq">
+                            <h4>Salafuddin Rofiq</h4>
+                            <p>Kepala Desa</p>
+                        </div>
+                    </div>
+                    <div class="org-connector line-down"></div>
+                    <div class="org-level">
+                        <div class="org-card hover-popup">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787805657/WhatsApp_Image_2026-08-24_at_10.07.52_cencme.jpg" alt="Uswatun khasanah, S.Pd">
+                            <h4>Uswatun Khasanah, S.Pd</h4>
+                            <p>Sekretaris Desa</p>
+                        </div>
+                    </div>
+                    <div class="org-connector line-branch"></div>
+                    <div class="org-level flex-row">
+                        <div class="org-card hover-popup">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787805658/WhatsApp_Image_2026-08-24_at_10.07.54_8_mocokj.jpg" alt="Syifa Ulinnuha, S.E">
+                            <h4>Syifa Ulinnuha, S.E</h4>
+                            <p>Kepala Urusan Keuangan</p>
+                        </div>
+                        <div class="org-card hover-popup">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787805658/WhatsApp_Image_2026-08-24_at_10.07.54_5_birlsm.jpg" alt="Hibah Maghfiroh">
+                            <h4>Hibah Maghfiroh</h4>
+                            <p>Kaur Umum & Perencanaan</p>
+                        </div>
+                        <div class="org-card hover-popup">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787805657/WhatsApp_Image_2026-08-24_at_10.07.54_7_b14jky.jpg" alt="Nurul Laela Sofiyan">
+                            <h4>Nurul Laela Sofiyan</h4>
+                            <p>Staff Administrasi</p>
+                        </div>
+                    </div>
+                    <div class="org-connector mb-space"></div>
+                    <div class="org-level flex-row">
+                        <div class="org-card hover-popup">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787805657/WhatsApp_Image_2026-08-24_at_10.07.54_4_oytnoq.jpg" alt="Zakaria">
+                            <h4>Zakaria</h4>
+                            <p>Kasi Kesejahteraan</p>
+                        </div>
+                        <div class="org-card hover-popup">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787805657/WhatsApp_Image_2026-08-24_at_10.07.54_3_dkbotw.jpg" alt="Arif Setyono, S.Pdi">
+                            <h4>Arif Setyono, S.Pdi</h4>
+                            <p>Kasi Pemerintahan</p>
+                        </div>
+                        <div class="org-card hover-popup">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787805657/WhatsApp_Image_2026-08-24_at_10.07.54_6_jqrtjk.jpg" alt="Eni Hidayatus Solekha, S.Pd">
+                            <h4>Eni Hidayatus Solekha, S.Pd</h4>
+                            <p>Kasi Pelayanan</p>
+                        </div>
+                    </div>
+                    <div class="org-connector mb-space"></div>
+                    <div class="org-level flex-row">
+                        <div class="org-card hover-popup">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787805657/WhatsApp_Image_2026-08-24_at_10.07.54_2_qgc6sk.jpg" alt="Muhammad Khoiri">
+                            <h4>Muhammad Khoiri</h4>
+                            <p>Kepala Dusun Mranggen</p>
+                        </div>
+                        <div class="org-card hover-popup">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787805656/WhatsApp_Image_2026-08-24_at_10.07.54_1_loz8dy.jpg" alt="Nuvita Arumsari, S.Pdi">
+                            <h4>Nuvita Arumsari, S.Pdi</h4>
+                            <p>Kepala Dusun Belon</p>
+                        </div>
+                        <div class="org-card hover-popup">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787805658/WhatsApp_Image_2026-08-24_at_10.07.54_mwtsrq.jpg" alt="Hasim Adnan">
+                            <h4>Hasim Adnan</h4>
+                            <p>Kepala Dusun Krajan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="idm" class="idm-detail-section">
+            <div class="idm-full-container">
+                <div class="section-header hover-popup" style="margin-bottom: 20px;">
+                    <h2>Indeks Desa Membangun (IDM)</h2>
+                </div>
+                <div class="idm-header-summary hover-popup">
+                    <div class="idm-tabs">
+                        <div class="idm-tab active">OLAH DATA PER ITEM</div>
+                        <div class="idm-tab">RUMUSAN POKOK</div>
+                    </div>
+                    <div class="idm-summary-content">
+                        <div class="idm-info-col">
+                            <div class="idm-info-row"><span class="lbl">PROVINSI</span><span class="val">: JAWA TENGAH</span></div>
+                            <div class="idm-info-row"><span class="lbl">KABUPATEN</span><span class="val">: SEMARANG</span></div>
+                            <div class="idm-info-row"><span class="lbl">KECAMATAN</span><span class="val">: PABELAN</span></div>
+                            <div class="idm-info-row"><span class="lbl">DESA</span><span class="val">: BEJATEN</span></div>
+                        </div>
+                        <div class="idm-info-col">
+                            <div class="idm-info-row"><span class="lbl">STATUS IDM</span><span class="val">: BERKEMBANG</span></div>
+                            <div class="idm-info-row"><span class="lbl">NILAI IDM</span><span class="val">: 0.6237</span></div>
+                        </div>
+                        <div class="idm-pie-container">
+                            <div id="idm-mini-pie"></div>
+                            <div class="idm-pie-legend">
+                                <div><span style="color:#6AAED6"> ■ </span> IKS 0.754 / 40.2951%</div>
+                                <div><span style="color:#6A5ACD"> ■ </span> IKE 0.450 / 24.5131%</div>
+                                <div><span style="color:#5F77C8"> ■ </span> IKL 0.667 / 35.6495%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="idm-table-wrapper hover-popup">
+                    <table class="idm-complex-table" id="idm-table-body">
+                        <thead>
+                            <tr>
+                                <th rowspan="2" style="width: 7%;">INDEKS KOMPOSIT</th>
+                                <th rowspan="2" style="width: 18%;">DIMENSI</th>
+                                <th rowspan="2" style="width: 26%;">PERANGKAT INDIKATOR</th>
+                                <th rowspan="2" style="width: 37%;">INDIKATOR PER ITEM</th>
+                                <th rowspan="2" style="width: 5%;">EKSISTING DARI<br>INDIKATOR</th>
+                                <th colspan="2" style="width: 7%;">REKOMENDASI</th>
+                            </tr>
+                            <tr>
+                                <th style="font-size: 8px;">Super Prioritas<br>(0,50%)</th>
+                                <th style="font-size: 8px;">Prioritas<br>(0,75%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="sdgs" class="sdgs-section section-bg-light">
+            <div class="sdgs-container">
+                <div class="section-header hover-popup" style="margin-bottom: 10px;">
+                    <h2>Skor SDGs Desa</h2>
+                </div>
+                <div class="sdgs-header hover-popup">
+                    <h2 class="sdgs-score">32,15</h2>
+                    <p class="sdgs-subtitle">Diambil dari rata-rata Skor 18 Goals SDGs Desa dari 0 desa per hari/tanggal</p>
+                    <hr class="sdgs-divider">
+                </div>
+                <div id="sdgs-grid" class="sdgs-grid"></div>
+                <div class="sdgs-chart-container hover-popup mt-4">
+                    <div id="sdgs-bar-chart"></div>
+                </div>
+            </div>
+        </section>
+        <section id="galeri">
+            <div class="container">
+                <div class="section-header hover-popup">
+                    <h2>Galeri Desa</h2>
+                </div>
+                <div class="grid-3">
+                    <div class="gallery-item hover-popup"><img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787820721/20200729_101256-EFFECTS_fkj5kl.jpg" alt="Galeri 1"></div>
+                    <div class="gallery-item hover-popup"><img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787820720/20220529_173052_bqg2h3.jpg" alt="Galeri 2"></div>
+                    <div class="gallery-item hover-popup"><img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787820720/20220422_103432_bn7afk.jpg" alt="Galeri 3"></div>
+                    <div class="gallery-item hover-popup"><img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787820713/20200519_090929-EDIT_tutawd.jpg" alt="Galeri 4"></div>
+                    <div class="gallery-item hover-popup"><img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787820713/20200629_110414_msby6p.jpg" alt="Galeri 5"></div>
+                    <div class="gallery-item hover-popup"><img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787820712/20200717_091557_igh8ia.jpg" alt="Galeri 6"></div>
+                </div>
+            </div>
+        </section>
+        <footer id="main-footer">
+            <div class="container grid-3">
+                <div class="footer-col hover-popup">
+                    <div class="footer-brand desa-identity" style="margin-bottom: 1rem;">
+                        <div class="logo-container">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787878684/Gemini_Generated_Image_4rnmgw4rnmgw4rnm_gtsehb.jpg" alt="Logo Desa Bejaten" class="desa-logo" style="width: 48px; height: 48px; margin: 0; padding: 2px;">
+                        </div>
+                        <div class="desa-title">
+                            <h1 style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 2px; margin: 0;">
+                                <span class="desa-top" style="color: var(--white); font-size: 1.4rem;">Desa</span>
+                                <span class="bejaten-bottom" style="color: #d1d5db; font-size: 1rem;">Bejaten</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <p>Jl. Raya Bejaten<br>Kecamatan Pabelan<br>Kabupaten Semarang<br>Jawa Tengah</p>
+                    <p class="mt-3"><i class="fas fa-phone"></i> +62 857-4066-6663<br><i class="fas fa-envelope"></i> Desabejaten.2014@gmail.com</p>
+                </div>
+                <div class="footer-col hover-popup">
+                    <h3>Lokasi Kami</h3>
+                    <div class="maps-container">
+                        <a href="https://maps.app.goo.gl/we8wxnEXXYysWx7YA?g_st=ac" target="_blank" class="btn btn-primary btn-sm mb-3" style="width:100%;"><i class="fas fa-map-marked-alt"></i> Buka di Google Maps</a>
+                        <a href="https://maps.app.goo.gl/we8wxnEXXYysWx7YA?g_st=ac" target="_blank">
+                            <img src="https://res.cloudinary.com/drxc5e7gf/image/upload/v1787804788/I_20260327_080551_0000.jpg_kwu5zx.jpg" alt="Peta Google Maps Desa Bejaten" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid rgba(255,255,255,0.2);">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col text-center hover-popup">
+                    <h3>Media Sosial</h3>
+                    <div class="social-links justify-center mt-3">
+                        <a href="https://www.facebook.com/desaa.bejaten?mibextid=ZbWKwL" target="_blank" class="hover-popup"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/desabejaten_official?igsi=NnRnazQzdXlvNmhu" target="_blank" class="hover-popup"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@desabejaten?_r=1&_t=ZS-99EZdlMnLEb" target="_blank" class="hover-popup"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/@desabejaten9575?si=IZNO4eA0TjP5sYWk" target="_blank" class="hover-popup"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Pemerintah Desa Bejaten. All rights reserved.</p>
+            </div>
+        </footer>
+    </div> 
+    
+    <div id="login-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>LOGIN ADMIN</h2>
+                <button id="btn-close-modal" class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-sm text-muted" style="margin-bottom: 20px;">Silakan login untuk mengakses halaman CMS.</p>
+                <div id="login-error" class="alert alert-danger" style="display: none;">Username atau password salah.</div>
+                <form id="form-login">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" id="login-username" class="form-control" placeholder="Masukkan username" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="login-password" class="form-control" placeholder="Masukkan password" required>
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" id="btn-cancel-login" class="btn btn-secondary">Batal</button>
+                        <button type="submit" class="btn btn-primary">MASUK</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div id="owl-system" aria-label="Interactive Owl Mascot" tabindex="-1">
+        <div id="owl-wrapper">
+            <img id="owl-img" src="" alt="Owl Mascot">
+            <div id="owl-fx"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
